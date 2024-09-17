@@ -37,6 +37,14 @@ var app = {
       variableWidth: true
     });
 
+    $('.linha-slider').slick({
+      dots: false,
+      speed: 500,
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      arrows: false
+    });
+
     // Event listeners for guest buttons
     document.getElementById('btn-minus').addEventListener('click', function() {
       app.decreaseGuests();

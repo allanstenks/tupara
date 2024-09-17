@@ -12568,3 +12568,167 @@ footer ul.social li {
   text-align: center;
   border: none;
 }
+
+.sobre {
+  background: #F5F5F5 url(../img/bgEstrutura.png) no-repeat center left;
+  padding: 80px 0;
+}
+
+.sobre h4 {
+  color: #EC6D3E;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 3.2px;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.sobre h2 {
+  color: #034C72;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.48px;
+  margin-top: 0;
+  text-align: left;
+  margin-bottom: 20px;
+  display: inline-block;
+  font-family: 'BrandRegular';
+}
+
+.sobre h2 strong {
+  color: #EC6D3E;
+}
+
+.sobre img {
+  width: 90%;
+}
+
+.sobre p {
+  color: #5E5E5E;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.32px;
+}
+
+.linha {
+  padding: 60px 0;
+  background: url(../img/bgAcomodacoes.png) no-repeat center bottom/contain;
+  min-height: 600px;
+}
+
+.linha i {
+  text-align: center;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.linha h3 {
+  color: #605C56;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 3.2px;
+  text-align: center;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+
+.linha h2 {
+  font-family: 'BrandRegular';
+  color: #605C56;
+  text-align: center;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.64px;
+  display: inline-block;
+  margin-bottom: 20px;
+  margin-top: 0;
+  text-align: center;
+  width: 100%;
+}
+
+.linha .linha-slider .slick-slide {
+  padding: 10px;
+  position: relative;
+}
+
+.linha .linha-slider .slick-active .item-linha span::before {
+  content: "";
+  width: 248px;
+  height: 1px;
+  position: absolute;
+  left: 154px;
+  top: -18px;
+  border-top: 1px dotted #FFF;
+}
+
+.linha .linha-slider .slick-active:last-child .item-linha span::before {
+  display: none;
+}
+
+.linha .linha-slider .item-linha {
+  width: 100%;
+  height: 400px;
+  border-radius: 10px;
+  display: inline-block;
+  margin-bottom: 40px;
+}
+
+.linha .linha-slider .item-linha:hover::before {
+  background: #034C72;
+}
+
+.linha .linha-slider .item-linha:hover::after {
+  border: 1px solid #034C72;
+}
+
+.linha .linha-slider .item-linha span {
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  text-align: center;
+  width: 100%;
+  color: #FFF;
+  font-weight: bold;
+  z-index: 2;
+}
+
+.linha .linha-slider .item-linha::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  position: absolute;
+  border-radius: 100px;
+  background: #FFF;
+  bottom: 32px;
+  left: 50%;
+  margin-left: -3px;
+  -webkit-transition: all ease-in 0.2s;
+  transition: all ease-in 0.2s;
+}
+
+.linha .linha-slider .item-linha::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  border-radius: 100px;
+  background: none;
+  bottom: 25px;
+  left: 50%;
+  margin-left: -10px;
+  border: 1px solid #FFF;
+  -webkit-transition: all ease-in 0.2s;
+  transition: all ease-in 0.2s;
+}
