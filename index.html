@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Tupará</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.6.22/css/uikit.min.css" />
+    <link href="assets/css/slick.css"  rel="stylesheet"/>
+    <link href="assets/css/slick-theme.css"  rel="stylesheet"/>
+    <link href="assets/css/app.css" rel="stylesheet"/>
+
+    
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon.jpg">
+
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <!-- Logo à esquerda -->
+                <a class="navbar-brand" href="/">
+                    <img src="assets/img/logo-tupara.png" alt="Logo">
+                </a>
+
+                <!-- Menu centralizado -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/sobre.html">O Tupará</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/resultado.html">Hospedagens</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Reservas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/fale-conosco.html">Fale Conosco</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Redes sociais à direita -->
+                <ul class="social-icons">
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="banner-slider">
+        <!-- Banner Slide 1 -->
+        <div class="banner-container">
+            <div class="container banner-content">
+                <div class="row">
+                    <div class="col-5">
+                        <h3>TUPARÁ GLAMPING & CHILL</h3>
+                        <h2>Descubra o <strong>encanto da natureza</strong> em nosso paraíso!</h2>
+                        <a href="#" class="btn-tour">
+                            <i class="fas fa-play"></i> <span>Faça um tour</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="banner-image"></div>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="barra-busca">
+        <div class="container">
+            <div class="row busca justify-content-center">
+                <div class="col-md-3">
+                    <label for="checkout" class="form-label">CHECK-OUT</label>
+                    <div class="input-group">
+                        <input type="date" id="checkin" class="form-control" placeholder="Insira a data">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <label for="checkout" class="form-label">CHECK-OUT</label>
+                    <div class="input-group">
+                        <input type="date" id="checkout" class="form-control" placeholder="Insira a data">
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <label for="hospedes" class="form-label">HÓSPEDES</label>
+                    <div class="custom-number-input">
+                        <button id="btn-minus" onclick="decreaseGuests()">-</button>
+                        <input type="number" id="num-hospedes" value="1" min="1" readonly>
+                        <button id="btn-plus" onclick="increaseGuests()">+</button>
+                    </div>
+                </div>
+                <div class="col-md-3 justify-content-end align-items-end">
+                    <button class="btn-search">Ver Disponibilidade</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="nossas-acomodacoes">
+        <div class="container">
+            <div class="row  justify-content-center">
+                <div class="col-md-12">
+                    <i><img src="assets/img/icon-acomodacoes.png"></i>
+                    <h3>TUPARÁ GLAMPING</h3>
+                    <h2>Nossas acomodações</h2>
+                </div>
+                <div class="col-md-4">
+                    <a class="item-acomodacoes">
+                        <div class="img" style="background: url(/assets/img/img-camping.png) no-repeat center / cover;"></div>
+                        <div class="desc">
+                            <h4><span class="material-symbols-outlined">camping</span> <b>Camping</b></h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis lectus sed nisl ultricies facilisis.</p>
+                            <span class="link"><i class="fa fa-arrow-right"></i><b>Saiba mais</b></span>
+                        </div>
+                    </a>
+                    </div>
+                    <div class="col-md-4">
+                    <a class="item-acomodacoes">
+                        <div class="img" style="background: url(/assets/img/img-chale.png) no-repeat center / cover;"></div>
+                        <div class="desc">
+                            <h4><span class="material-symbols-outlined">camping</span> <b>Chalé</b></h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis lectus sed nisl ultricies facilisis.</p>
+                            <span class="link"><i class="fa fa-arrow-right"></i><b>Saiba mais</b></span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a class="item-acomodacoes">
+                        <div class="img" style="background: url(/assets/img/img-baia.png) no-repeat center / cover;"></div>
+                        <div class="desc">
+                            <h4><span class="material-symbols-outlined">camping</span> <b>Baiá</b></h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis lectus sed nisl ultricies facilisis.</p>
+                            <span class="link"><i class="fa fa-arrow-right"></i><b>Saiba mais</b></span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-12">
+                    <a class="down"><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+                </div> 
+            </div>
+        </div>
+    </div>
+
+    <div class="video"  uk-lightbox="animation: fade">
+        <div class="container">
+            <div class="row busca justify-content-center">
+                <div class="col-md-12">
+                    <a href="https://www.youtube.com/watch?v=nU_SfYqfdp0" data-uk-lightbox onclick="console.log('Video clicked')">
+                        <i></i>
+                        <span>VEJA O VIDEO</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="estrutura">
+        <div class="container">
+            <div class="row busca justify-content-center">
+                <div class="col-md-6">
+                    <img src="/assets/img/imgEstrutura.png"/>
+                </div>
+                <div class="col-md-6">
+                    <h4>ESTRUTURA</h4>
+                    <h2>Infraestrutura <strong>premium</strong> para aproveitar todos os  momentos</h2>
+                    <ul>
+                        <li>
+                            <i><span class="iconify" data-icon="ic:outline-directions-boat" data-inline="false"></span></i>
+                            <h5>Diversão na água</h5>
+                            <p>Desfrute da beleza natural às margens da Represa de Ituparanga.</p>
+                        </li>
+                        <li>
+                            <i><span class="iconify" data-icon="mingcute:shower-line" data-inline="false"></span></i>
+                            <h5>Banheiros completos</h5>
+                            <p>Nada como um banho quente depois de um dia cheio de atividades.</p>
+                        </li>
+                        <li>
+                            <i><span class="iconify" data-icon="tdesign:barbecue" data-inline="false"></span></i>
+                            <h5>Espaço Gourmet</h5>
+                            <p>Reúna amigos e família para um churrasco em nossa área gourmet.</p>
+                        </li>
+                        <li>
+                            <i><span class="iconify" data-icon="material-symbols:camping-outline" data-inline="false"></span></i>
+                            <h5>Área de camping</h5>
+                            <p>Conforto e natureza em nossa exclusiva área de camping.</p>
+                        </li>
+                    </ul>
+                    <a>Faça sua Reserva</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="galeria"  uk-lightbox="animation: fade">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4">
+                    <a href="/assets/img/fotos/imgCamping5.png" data-uk-lightbox="animation: slide">
+                        <div class="img full" style="background: url(/assets/img/fotos/imgCamping5.png) no-repeat center / cover;"></div>
+                    </a>
+                </div>
+                <div class="col-md-8">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <a href="/assets/img/fotos/imgCamping4.png" data-uk-lightbox="animation: slide">
+                                <div class="img" style="background: url(/assets/img/fotos/imgCamping4.png) no-repeat center / cover;"></div>
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="/assets/img/fotos/imgCamping3.png" data-uk-lightbox="animation: slide">
+                                <div class="img" style="background: url(/assets/img/fotos/imgCamping3.png) no-repeat center / cover;"></div>
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="/assets/img/fotos/imgCamping2.png" data-uk-lightbox="animation: slide">
+                                <div class="img" style="background: url(/assets/img/fotos/imgCamping2.png) no-repeat center / cover;"></div>
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="/assets/img/fotos/imgCamping1.png" data-uk-lightbox="animation: slide">
+                                <div class="img" style="background: url(/assets/img/fotos/imgCamping1.png) no-repeat center / cover;"></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Outros links de imagens não mostradas diretamente na galeria, mas incluídas no lightbox -->
+    <div style="display:none;">
+        <a href="/assets/img/fotos/imgCamping6.png" data-uk-lightbox></a>
+        <a href="/assets/img/fotos/imgCamping7.png" data-uk-lightbox></a>
+        <!-- Continue adicionando até a imagem 20 -->
+        <a href="/assets/img/fotos/imgCamping20.png" data-uk-lightbox></a>
+    </div>
+
+    <div class="localizacao">
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-md-12">
+                    <i><img src="assets/img/icon-localizacao.png"></i>
+                    <h3>TUPARÁ GLAMPING</h3>
+                    <h2>Localização</h2>
+                </div>
+                <div class="col-md-12">
+                    <div class="mapa">
+                        <div id="map" style="height: 500px; width: 100%;"></div>
+                        <div class="endereco">
+                            <div class="header-endereco">
+                                <h4>COMO CHEGAR</h4>
+                                <h2>Navegue pelo nosso mapa interativo</h2>
+                                <form onsubmit="event.preventDefault(); calculateRoute();">
+                                    <i class="icon"><span class="iconify" data-icon="eva:pin-fill" data-inline="false"></span></i>
+                                    <input type="text" id="start-location" placeholder="Digite seu local de partida" />
+                                    <button><i><span class="iconify" data-icon="material-symbols:search" data-inline="false"></span></i></button>
+                                </form>
+                            </div>
+                            <div class="container-endereco">
+                                <h2>tupará glamping & chill</h2>
+                                <p>Descubra o encanto da natureza em nosso paraíso!</p>
+                                <h3><i><span class="iconify" data-icon="eva:pin-fill" data-inline="false"></span></i><strong>Loteamento Cala Piccola Estr. Mun. da Cachoeira - Ibiúna, SP</strong></h3>
+                                <a href="javascript:void(0);" onclick="mostrarLugaresProximos()">Lugares próximos</a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="depoimentos">
+        <div class="container">
+            <div class="row  justify-content-center">
+                <div class="col-md-12">
+                    <i><img src="assets/img/icon-depoimentos.png"></i>
+                    <h3>Depoimentos</h3>
+                    <h2>O que dizem sobre o Tupará</h2>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-12 depoimento-slider">
+                    <div>
+                        <div class="item-depoimento">
+                            <div class="aspas"><img src="/assets/img/aspas.png"/></div>
+                            <i>
+                                <span class="iconify" data-icon="ic:round-star" data-inline="false"></span>
+                                <span class="iconify" data-icon="ic:round-star" data-inline="false"></span>
+                                <span class="iconify" data-icon="ic:round-star" data-inline="false"></span>
+                                <span class="iconify" data-icon="ic:round-star" data-inline="false"></span>
+                                <span class="iconify" data-icon="ic:round-star" data-inline="false"></span>
+                            </i>
+                            <span></span>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis lectus sed nisl ultricies facilisis. Pellentesque varius odio in consectetur consectetur.</p>
+                            <div class="avatar">
+                                <span><img src="assets/img/avatar.png"/></span>
+                                <h6>Lorem ipsum</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="item-depoimento">
+                            <div class="aspas"><img src="/assets/img/aspas.png"/></div>
+                            <i>
+                                <span class="iconify" data-icon="ic:round-star" data-inline="false"></span>
+                                <span class="iconify" data-icon="ic:round-star" data-inline="false"></span>
+                                <span class="iconify" data-icon="ic:round-star" data-inline="false"></span>
+                                <span class="iconify" data-icon="ic:round-star" data-inline="false"></span>
+                                <span class="iconify" data-icon="ic:round-star" data-inline="false"></span>
+                            </i>
+                            <span></span>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis lectus sed nisl ultricies facilisis. Pellentesque varius odio in consectetur consectetur.</p>
+                            <div class="avatar">
+                                <span><img src="assets/img/avatar.png"/></span>
+                                <h6>Lorem ipsum</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="item-depoimento">
+                            <div class="aspas"><img src="/assets/img/aspas.png"/></div>
+                            <i>
+                                <span class="iconify" data-icon="ic:round-star" data-inline="false"></span>
+                                <span class="iconify" data-icon="ic:round-star" data-inline="false"></span>
+                                <span class="iconify" data-icon="ic:round-star" data-inline="false"></span>
+                                <span class="iconify" data-icon="ic:round-star" data-inline="false"></span>
+                                <span class="iconify" data-icon="ic:round-star" data-inline="false"></span>
+                            </i>
+                            <span></span>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis lectus sed nisl ultricies facilisis. Pellentesque varius odio in consectetur consectetur.</p>
+                            <div class="avatar">
+                                <span><img src="assets/img/avatar.png"/></span>
+                                <h6>Lorem ipsum</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="item-depoimento">
+                            <div class="aspas"><img src="/assets/img/aspas.png"/></div>
+                            <i>
+                                <span class="iconify" data-icon="ic:round-star" data-inline="false"></span>
+                                <span class="iconify" data-icon="ic:round-star" data-inline="false"></span>
+                                <span class="iconify" data-icon="ic:round-star" data-inline="false"></span>
+                                <span class="iconify" data-icon="ic:round-star" data-inline="false"></span>
+                                <span class="iconify" data-icon="ic:round-star" data-inline="false"></span>
+                            </i>
+                            <span></span>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis lectus sed nisl ultricies facilisis. Pellentesque varius odio in consectetur consectetur.</p>
+                            <div class="avatar">
+                                <span><img src="assets/img/avatar.png"/></span>
+                                <h6>Lorem ipsum</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="reservas">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7">
+                    <h2>Viajar também é <strong>uma jornada</strong> para dentro de si mesmo.</h2>
+                    <a>Faça sua Reserva</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <img src="/assets/img/logo-tupara-rodape.png" />
+                </div>
+                <div class="col-md-6">
+                    <ul class="sitemap">
+                        <h5>Home</h5>
+                        <li><a>Hospedagens</a></li>
+                        <li><a>Estrutura</a></li>
+                        <li><a>Depoimentos</a></li>
+                    </ul>
+                    <ul class="sitemap">
+                        <h5>Hospedagens</h5>
+                        <li><a>Camping</a></li>
+                        <li><a>Chalés</a></li>
+                        <li><a>Baías</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <ul>
+                        <h5>Contato</h5>
+                        <li><a><i><span class="iconify" data-icon="ic:round-phone" data-inline="false"></span></i> (11) 0000-0000</a></li>
+                        <li><a><i><span class="iconify" data-icon="material-symbols:mail" data-inline="false"></span></i> ola@tupara.com.br</a></li>
+                    </ul>
+                    <ul class="social">
+                        <li><a><i><span class="iconify" data-icon="ri:instagram-fill" data-inline="false"></span></i></a></li>
+                        <li><a><i><span class="iconify" data-icon="ic:baseline-facebook" data-inline="false"></span></i></a></li>
+                        <li><a><i><span class="iconify" data-icon="mingcute:youtube-fill" data-inline="false"></span></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="copy">
+        © Copyright 2024 Todos os direitos reservados Tupará Glamping - <a href="https://www.idzagencia.com.br">Agência IDZ</a>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/vendor/jquery.js"></script>
+    <script src="assets/js/vendor/slick.min.js"></script>
+    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAMnla_E4CJSoYLaiKmSpubtZ7ih7_Epj8&callback=initMap" async defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.6.22/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.6.22/js/uikit-icons.min.js"></script>
+    <script src="assets/js/app.js"></script>
+
+</body>
+</html>

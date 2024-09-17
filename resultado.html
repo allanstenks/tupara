@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Tupará</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.6.22/css/uikit.min.css" />
+    <link href="assets/css/slick.css"  rel="stylesheet"/>
+    <link href="assets/css/slick-theme.css"  rel="stylesheet"/>
+    <link href="assets/css/app.css" rel="stylesheet"/>
+
+    
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon.jpg">
+
+</head>
+<body>
+
+    <header class="interno">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <!-- Logo à esquerda -->
+                <a class="navbar-brand" href="/">
+                    <img src="assets/img/logo-tupara.png" alt="Logo">
+                </a>
+
+                <!-- Menu centralizado -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="busca-top" id="navbarNav">
+                    <div class="row busca justify-content-center">
+                        <div class="col-md-3">
+                            <label for="checkout" class="form-label">CHECK-OUT</label>
+                            <div class="input-group">
+                                <input type="date" id="checkin" class="form-control" placeholder="Insira a data">
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <label for="checkout" class="form-label">CHECK-OUT</label>
+                            <div class="input-group">
+                                <input type="date" id="checkout" class="form-control" placeholder="Insira a data">
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <label for="hospedes" class="form-label">HÓSPEDES</label>
+                            <div class="custom-number-input">
+                                <button id="btn-minus" onclick="decreaseGuests()">-</button>
+                                <input type="number" id="num-hospedes" value="1" min="1" readonly>
+                                <button id="btn-plus" onclick="increaseGuests()">+</button>
+                            </div>
+                        </div>
+                        <div class="col-md-3 justify-content-end align-items-end">
+                            <button class="btn-search"><i><span class="iconify" data-icon="material-symbols:search" data-inline="false"></span></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Redes sociais à direita -->
+                <ul class="social-icons">
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+    <div class="resultado">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-12">
+                    <h3>Disponíveis para a data selecionada</h3>
+                </div>
+                <div class="col-md-4">
+                    <a class="item-acomodacoes" href="/acomodacoes.html">
+                        <div class="img" style="background: url(/assets/img/img-camping.png) no-repeat center top / cover;">
+                            <span><i class="icon"><span class="iconify" data-icon="mdi:heart" data-inline="false"></span></i> Preferido dos Hóspedes</span>
+                        </div>
+                        <div class="desc">
+                            <h4><span class="material-symbols-outlined">camping</span> <b>Camping</b></h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis lectus sed nisl ultricies facilisis.</p>
+                            <h6><strong>R$120</strong> por noite | Total R$240  </h6>
+                            <span class="link"><i class="fa fa-arrow-right"></i><b>Saiba mais</b></span>
+                        </div>
+                    </a>
+                    </div>
+                    <div class="col-md-4">
+                    <a class="item-acomodacoes" href="/acomodacoes.html">
+                        <div class="img" style="background: url(/assets/img/img-chale.png) no-repeat center / cover;"> </div>
+                        <div class="desc">
+                            <h4><span class="material-symbols-outlined">camping</span> <b>Chalé</b></h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis lectus sed nisl ultricies facilisis.</p>
+                            <h6><strong>R$120</strong> por noite | Total R$240  </h6>
+                            <span class="link"><i class="fa fa-arrow-right"></i><b>Saiba mais</b></span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a class="item-acomodacoes" href="/acomodacoes.html">
+                        <div class="img" style="background: url(/assets/img/img-baia.png) no-repeat center / cover;"></div>
+                        <div class="desc">
+                            <h4><span class="material-symbols-outlined">camping</span> <b>Baiá</b></h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis lectus sed nisl ultricies facilisis.</p>
+                            <h6><strong>R$120</strong> por noite | Total R$240  </h6>
+                            <span class="link"><i class="fa fa-arrow-right"></i><b>Saiba mais</b></span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <img src="/assets/img/logo-tupara-rodape.png" />
+                </div>
+                <div class="col-md-6">
+                    <ul class="sitemap">
+                        <h5>Home</h5>
+                        <li><a>Hospedagens</a></li>
+                        <li><a>Estrutura</a></li>
+                        <li><a>Depoimentos</a></li>
+                    </ul>
+                    <ul class="sitemap">
+                        <h5>Hospedagens</h5>
+                        <li><a>Camping</a></li>
+                        <li><a>Chalés</a></li>
+                        <li><a>Baías</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <ul>
+                        <h5>Contato</h5>
+                        <li><a><i><span class="iconify" data-icon="ic:round-phone" data-inline="false"></span></i> (11) 0000-0000</a></li>
+                        <li><a><i><span class="iconify" data-icon="material-symbols:mail" data-inline="false"></span></i> ola@tupara.com.br</a></li>
+                    </ul>
+                    <ul class="social">
+                        <li><a><i><span class="iconify" data-icon="ri:instagram-fill" data-inline="false"></span></i></a></li>
+                        <li><a><i><span class="iconify" data-icon="ic:baseline-facebook" data-inline="false"></span></i></a></li>
+                        <li><a><i><span class="iconify" data-icon="mingcute:youtube-fill" data-inline="false"></span></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="copy">
+        © Copyright 2024 Todos os direitos reservados Tupará Glamping - <a href="https://www.idzagencia.com.br">Agência IDZ</a>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/vendor/jquery.js"></script>
+    <script src="assets/js/vendor/slick.min.js"></script>
+    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAMnla_E4CJSoYLaiKmSpubtZ7ih7_Epj8&callback=initMap" async defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.6.22/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.6.22/js/uikit-icons.min.js"></script>
+    <script src="assets/js/app.js"></script>
+
+</body>
+</html>
