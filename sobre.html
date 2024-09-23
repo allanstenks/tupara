@@ -8,12 +8,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.6.22/css/uikit.min.css" />
-    <link href="https://idzagencia.com.br/clientes/tupara/assets/css/slick.css"  rel="stylesheet"/>
-    <link href="https://idzagencia.com.br/clientes/tupara/assets/css/slick-theme.css"  rel="stylesheet"/>
-    <link href="https://idzagencia.com.br/clientes/tupara/assets/css/app.css" rel="stylesheet"/>
+    <link href="/assets/css/slick.css"  rel="stylesheet"/>
+    <link href="/assets/css/slick-theme.css"  rel="stylesheet"/>
+    <link href="/assets/css/app.css" rel="stylesheet"/>
 
     
-    <link rel="icon" type="image/png" sizes="16x16" href="https://idzagencia.com.br/clientes/tupara/assets/img/favicon.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon.jpg">
 
 </head>
 <body>
@@ -24,7 +24,7 @@
             <div class="container">
                 <!-- Logo à esquerda -->
                 <a class="navbar-brand" href="/">
-                    <img src="https://idzagencia.com.br/clientes/tupara/assets/img/logo-tupara.png" alt="Logo">
+                    <img src="/assets/img/logo-tupara.png" alt="Logo">
                 </a>
 
                 <!-- Menu centralizado -->
@@ -34,23 +34,46 @@
                     </span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
+
+                    <button type="button" class="close text-right" data-toggle="collapse" data-target="#navbarNav" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+
                     <ul class="navbar-nav mx-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="https://idzagencia.com.br/clientes/tupara/">Home</a>
+                            <a class="nav-link" href="/">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="https://idzagencia.com.br/clientes/tupara/sobre.html">O Tupará</a>
+                            <a class="nav-link" href="/sobre.html">O Tupará</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="https://idzagencia.com.br/clientes/tupara/resultado.html">Hospedagens</a>
+                            <a class="nav-link" href="/resultado.html">Hospedagens</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="">Reservas</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="https://idzagencia.com.br/clientes/tupara/contato.html">Fale Conosco</a>
+                            <a class="nav-link" href="/contato.html">Fale Conosco</a>
                         </li>
                     </ul>
+                    <div class="extensao-mobile">
+                        <h3>Acomodações</h3>
+                        <a>
+                            <h4>camping</h4>
+                            <span>SAIBA MAIS</span>
+                            <i class="icon"><span class="iconify" data-icon="ph:tent-bold" data-inline="false"></span></i>
+                        </a>
+                        <a>
+                            <h4>chalé</h4>
+                            <span>(EM BREVE)</span>
+                            <i><span class="material-symbols-outlined">cottage</span></i>
+                        </a>
+                        <a>
+                            <h4>baiá</h4>
+                            <span>SAIBA MAIS</span>
+                            <i><span class="material-symbols-outlined">camping</span></i>
+                        </a>
+                    </div>
                 </div>
                 <div class="busca-top">
                     <div class="row busca justify-content-center">
@@ -94,12 +117,12 @@
         <div class="container">
             <div class="row busca justify-content-center">
                 <div class="col-md-6 d-none d-md-block">
-                    <img src="https://idzagencia.com.br/clientes/tupara/assets/img/imgSobre.png"/>
+                    <img src="/assets/img/imgSobre.png"/>
                 </div>
                 <div class="col-md-6">
                     <h4>TUPARÁ GLAMPING & CHILL</h4>
                     <h2>Construímos <strong>dias especiais</strong> em um lugar único</h2>
-                    <img src="https://idzagencia.com.br/clientes/tupara/assets/img/imgSobre.png" class="d-block d-md-none"/>
+                    <img src="/assets/img/imgSobre.png" class="d-block d-md-none"/>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at sapien vel velit laoreet consectetur. Duis finibus, neque a efficitur volutpat, neque orci volutpat mauris, ac ultricies nulla leo et massa. Aenean ac mattis mauris. Duis feugiat pretium accumsan. <br><br>
                         Quisque auctor enim ut neque condimentum volutpat. Donec aliquam diam malesuada tortor pellentesque malesuada. Curabitur et lobortis odio. Pellentesque accumsan lacus ac massa egestas pellentesque. Quisque ultricies non quam eget fermentum. Sed nulla mi, consectetur eu ligula in, cursus semper elit. Phasellus molestie sed nisl et facilisis. <br><br>
@@ -114,7 +137,7 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-12">
-                    <i><img src="https://idzagencia.com.br/clientes/tupara/assets/img/icon-localizacao.png"></i>
+                    <i><img src="/assets/img/icon-localizacao.png"></i>
                     <h3>ACOMPANHE NOSSO PROCESSO</h3>
                     <h2>Linha do tempo da obra</h2>
                 </div>
@@ -152,7 +175,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-3">
-                    <img src="https://idzagencia.com.br/clientes/tupara/assets/img/logo-tupara-rodape.png" />
+                    <img src="/assets/img/logo-tupara-rodape.png" />
                 </div>
                 <div class="col-md-6">
                     <ul class="sitemap">
@@ -188,14 +211,14 @@
     </div>
 
     <!-- Scripts -->
-    <script src="https://idzagencia.com.br/clientes/tupara/assets/js/vendor/jquery.js"></script>
-    <script src="https://idzagencia.com.br/clientes/tupara/assets/js/vendor/bootstrap.bundle.min.js"></script>
-    <script src="https://idzagencia.com.br/clientes/tupara/assets/js/vendor/slick.min.js"></script>
+    <script src="/assets/js/vendor/jquery.js"></script>
+    <script src="/assets/js/vendor/bootstrap.bundle.min.js"></script>
+    <script src="/assets/js/vendor/slick.min.js"></script>
     <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAMnla_E4CJSoYLaiKmSpubtZ7ih7_Epj8&callback=initMap" async defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.6.22/js/uikit.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.6.22/js/uikit-icons.min.js"></script>
-    <script src="https://idzagencia.com.br/clientes/tupara/assets/js/app.js"></script>
+    <script src="/assets/js/app.js"></script>
 
 </body>
 </html>

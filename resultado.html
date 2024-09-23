@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.6.22/css/uikit.min.css" />
-    <link href="assets/css/slick.css"  rel="stylesheet"/>
-    <link href="assets/css/slick-theme.css"  rel="stylesheet"/>
-    <link href="assets/css/app.css" rel="stylesheet"/>
+    <link href="/assets/css/slick.css"  rel="stylesheet"/>
+    <link href="/assets/css/slick-theme.css"  rel="stylesheet"/>
+    <link href="/assets/css/app.css" rel="stylesheet"/>
 
     
     <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon.jpg">
@@ -33,6 +33,9 @@
                     </span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
+                    <button type="button" class="close text-right" data-toggle="collapse" data-target="#navbarNav" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
                     <ul class="navbar-nav mx-auto">
                         <li class="nav-item">
                             <a class="nav-link" href="">Home</a>
@@ -50,6 +53,24 @@
                             <a class="nav-link" href="contato.html">Fale Conosco</a>
                         </li>
                     </ul>
+                    <div class="extensao-mobile">
+                        <h3>Acomodações</h3>
+                        <a>
+                            <h4>camping</h4>
+                            <span>SAIBA MAIS</span>
+                            <i class="icon"><span class="iconify" data-icon="ph:tent-bold" data-inline="false"></span></i>
+                        </a>
+                        <a>
+                            <h4>chalé</h4>
+                            <span>(EM BREVE)</span>
+                            <i><span class="material-symbols-outlined">cottage</span></i>
+                        </a>
+                        <a>
+                            <h4>baiá</h4>
+                            <span>SAIBA MAIS</span>
+                            <i><span class="material-symbols-outlined">camping</span></i>
+                        </a>
+                    </div>
                 </div>
                 <div class="busca-top">
                     <div class="row busca justify-content-center">
@@ -101,7 +122,7 @@
                             <span><i class="icon"><span class="iconify" data-icon="mdi:heart" data-inline="false"></span></i> Preferido dos Hóspedes</span>
                         </div>
                         <div class="desc">
-                            <h4><span class="material-symbols-outlined">camping</span> <b>Camping</b></h4>
+                            <h4> <i class="icon"><span class="iconify" data-icon="ph:tent-bold" data-inline="false"></span></i> <b>Camping</b></h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis lectus sed nisl ultricies facilisis.</p>
                             <h6><strong>R$120</strong> por noite | Total R$240  </h6>
                             <span class="link"><i class="fa fa-arrow-right"></i><b>Saiba mais</b></span>
@@ -109,13 +130,13 @@
                     </a>
                 </div>
                 <div class="col-md-4" id="acomodacao-chale">
-                    <a class="item-acomodacoes" href="acomodacoes.html">
+                    <a class="item-acomodacoes em-breve">
                         <div class="img" style="background: url(https://idzagencia.com.br/clientes/tupara/assets/img/img-chale.png) no-repeat center / cover;"> </div>
                         <div class="desc">
-                            <h4><span class="material-symbols-outlined">camping</span> <b>Chalé</b></h4>
+                            <h4><span class="material-symbols-outlined">cottage</span> <b>Chalé</b></h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis lectus sed nisl ultricies facilisis.</p>
-                            <h6><strong>R$120</strong> por noite | Total R$240  </h6>
-                            <span class="link"><i class="fa fa-arrow-right"></i><b>Saiba mais</b></span>
+                            <h6></h6>
+                            <span class="link"><i class="fa fa-arrow-right"></i><b>Em breve</b></span>
                         </div>
                     </a>
                 </div>
@@ -181,7 +202,7 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAMnla_E4CJSoYLaiKmSpubtZ7ih7_Epj8&callback=initMap" async defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.6.22/js/uikit.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.6.22/js/uikit-icons.min.js"></script>
-    <script src="assets/js/app.js"></script>
+    <script src="/assets/js/app.js"></script>
 
 </body>
 </html>

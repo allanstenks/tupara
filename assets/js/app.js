@@ -19,7 +19,7 @@ var app = {
   init: function() {
     app.initSlickSliders();
     app.initEventListeners();
-    app.initMap();
+    initMap();
     app.setupLightbox();
     app.setupSearch();
     app.checkAccommodationAvailability();
