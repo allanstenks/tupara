@@ -37,7 +37,7 @@
                     <button type="button" class="close text-right" data-toggle="collapse" data-target="#navbarNav" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
-                    
+
                     <ul class="navbar-nav mx-auto">
                         <li class="nav-item">
                             <a class="nav-link" href="https://idzagencia.com.br/clientes/tupara/">Home</a>
@@ -301,7 +301,7 @@
                             <div class="header-endereco">
                                 <h4>COMO CHEGAR</h4>
                                 <h2>Navegue pelo nosso mapa interativo</h2>
-                                <form onsubmit="event.preventDefault(); calculateRoute();">
+                                <form onsubmit="event.preventDefault(); app.calculateRoute();">
                                     <i class="icon"><span class="iconify" data-icon="eva:pin-fill" data-inline="false"></span></i>
                                     <input type="text" id="start-location" placeholder="Digite seu local de partida" />
                                     <button><i><span class="iconify" data-icon="material-symbols:search" data-inline="false"></span></i></button>
@@ -311,7 +311,7 @@
                                 <h2>tupará glamping & chill</h2>
                                 <p>Descubra o encanto da natureza em nosso paraíso!</p>
                                 <h3><i><span class="iconify" data-icon="eva:pin-fill" data-inline="false"></span></i><strong>Loteamento Cala Piccola Estr. Mun. da Cachoeira - Ibiúna, SP</strong></h3>
-                                <a href="javascript:void(0);" onclick="mostrarLugaresProximos()">Lugares próximos</a>
+                                <a href="javascript:void(0);" onclick="app.mostrarLugaresProximos()">Lugares próximos</a>
                             </div>
                             
                         </div>

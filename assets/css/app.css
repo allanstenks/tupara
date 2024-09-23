@@ -11722,6 +11722,7 @@ header.interno .busca .custom-number-input input {
   width: 80%;
   margin: auto;
   margin-bottom: 20px;
+  display: block;
 }
 
 .localizacao .mapa .endereco .header-endereco form {
