@@ -27,24 +27,45 @@
                 </a>
 
                 <!-- Menu centralizado -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon">
+                        <i class="fa fa-bars" aria-hidden="true"></i>
+                    </span>
                 </button>
-                <div class="busca-top" id="navbarNav">
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sobre.html">O Tupará</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="resultado.html">Hospedagens</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Reservas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contato.html">Fale Conosco</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="busca-top">
                     <div class="row busca justify-content-center">
-                        <div class="col-md-3">
-                            <label for="checkout" class="form-label">CHECK-OUT</label>
+                        <div class="col-6 col-md-3">
+                            <label for="checkout" class="form-label">CHECK-IN</label>
                             <div class="input-group">
                                 <input type="date" id="checkin" class="form-control" placeholder="Insira a data">
                             </div>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-6 col-md-3">
                             <label for="checkout" class="form-label">CHECK-OUT</label>
                             <div class="input-group">
                                 <input type="date" id="checkout" class="form-control" placeholder="Insira a data">
                             </div>
                         </div>
-                        <div class="col-md-2">
+                        <div class="col-md-2 d-none d-md-block">
                             <label for="hospedes" class="form-label">HÓSPEDES</label>
                             <div class="custom-number-input">
                                 <button id="btn-minus" onclick="decreaseGuests()">-</button>
@@ -68,16 +89,15 @@
         </nav>
     </header>
 
-
     <div class="resultado">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-12">
                     <h3>Disponíveis para a data selecionada</h3>
                 </div>
-                <div class="col-md-4">
-                    <a class="item-acomodacoes" href="/acomodacoes.html">
-                        <div class="img" style="background: url(/assets/img/img-camping.png) no-repeat center top / cover;">
+                <div class="col-md-4" id="acomodacao-camping">
+                    <a class="item-acomodacoes" href="acomodacoes.html">
+                        <div class="img" style="background: url(https://idzagencia.com.br/clientes/tupara/assets/img/img-camping.png) no-repeat center top / cover;">
                             <span><i class="icon"><span class="iconify" data-icon="mdi:heart" data-inline="false"></span></i> Preferido dos Hóspedes</span>
                         </div>
                         <div class="desc">
@@ -87,10 +107,10 @@
                             <span class="link"><i class="fa fa-arrow-right"></i><b>Saiba mais</b></span>
                         </div>
                     </a>
-                    </div>
-                    <div class="col-md-4">
-                    <a class="item-acomodacoes" href="/acomodacoes.html">
-                        <div class="img" style="background: url(/assets/img/img-chale.png) no-repeat center / cover;"> </div>
+                </div>
+                <div class="col-md-4" id="acomodacao-chale">
+                    <a class="item-acomodacoes" href="acomodacoes.html">
+                        <div class="img" style="background: url(https://idzagencia.com.br/clientes/tupara/assets/img/img-chale.png) no-repeat center / cover;"> </div>
                         <div class="desc">
                             <h4><span class="material-symbols-outlined">camping</span> <b>Chalé</b></h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis lectus sed nisl ultricies facilisis.</p>
@@ -99,9 +119,9 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-md-4">
-                    <a class="item-acomodacoes" href="/acomodacoes.html">
-                        <div class="img" style="background: url(/assets/img/img-baia.png) no-repeat center / cover;"></div>
+                <div class="col-md-4" id="acomodacao-baia">
+                    <a class="item-acomodacoes" href="acomodacoes.html">
+                        <div class="img" style="background: url(https://idzagencia.com.br/clientes/tupara/assets/img/img-baia.png) no-repeat center / cover;"></div>
                         <div class="desc">
                             <h4><span class="material-symbols-outlined">camping</span> <b>Baiá</b></h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis lectus sed nisl ultricies facilisis.</p>
@@ -118,7 +138,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-3">
-                    <img src="/assets/img/logo-tupara-rodape.png" />
+                    <img src="assets/img/logo-tupara-rodape.png" />
                 </div>
                 <div class="col-md-6">
                     <ul class="sitemap">
@@ -155,6 +175,7 @@
 
     <!-- Scripts -->
     <script src="assets/js/vendor/jquery.js"></script>
+    <script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
     <script src="assets/js/vendor/slick.min.js"></script>
     <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAMnla_E4CJSoYLaiKmSpubtZ7ih7_Epj8&callback=initMap" async defer></script>

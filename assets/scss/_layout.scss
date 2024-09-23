@@ -4,15 +4,14 @@
 
 @font-face {
     font-family: 'BrandRegular';
-    src: url('/assets/fonts/FontsFree-Net-Brand-Regular-1.eot'); /* IE9 Compat Modes */
-    src: url('/assets/fonts/FontsFree-Net-Brand-Regular-1.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('/assets/fonts/FontsFree-Net-Brand-Regular-1.woff2') format('woff2'), /* Super Modern Browsers */
-         url('/assets/fonts/FontsFree-Net-Brand-Regular-1.woff') format('woff'), /* Modern Browsers */
-         url('/assets/fonts/FontsFree-Net-Brand-Regular-1.ttf') format('truetype'); /* Legacy iOS */
+    src: url('https://idzagencia.com.br/clientes/tupara/assets/fonts/FontsFree-Net-Brand-Regular-1.eot'); /* IE9 Compat Modes */
+    src: url('https://idzagencia.com.br/clientes/tupara/assets/fonts/FontsFree-Net-Brand-Regular-1.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('https://idzagencia.com.br/clientes/tupara/assets/fonts/FontsFree-Net-Brand-Regular-1.woff2') format('woff2'), /* Super Modern Browsers */
+         url('https://idzagencia.com.br/clientes/tupara/assets/fonts/FontsFree-Net-Brand-Regular-1.woff') format('woff'), /* Modern Browsers */
+         url('https://idzagencia.com.br/clientes/tupara/assets/fonts/FontsFree-Net-Brand-Regular-1.ttf') format('truetype'); /* Legacy iOS */
     font-weight: normal;
     font-style: normal;
 }
-
 
 html {
     border: none;
@@ -33,7 +32,7 @@ header{
             line-height: normal;
             letter-spacing: 0.32px;
             &:hover{
-                color: #EA6331 !important;
+                color: var(--laranja) !important;
                 font-size: 16px;
                 font-style: normal;
                 font-weight: 700;
@@ -44,13 +43,19 @@ header{
         .social-icons{
             display: inline-block;
             list-style: none;
-            padding-top: 0;
+            padding-top: 20px;
             li{
                 display: inline-block;
                 a{
                     margin: 0 4px;
                 }
             }
+        }
+        &.bg-light{
+            background: none !important;
+        }
+        .close{
+            display: none;
         }
     }
     &.interno{
@@ -69,7 +74,7 @@ header{
                 margin-top: -6px;
             }
             input[type="date"]::-webkit-calendar-picker-indicator {
-                background: url(../img/iconCalender.png) no-repeat;
+                background: url(https://idzagencia.com.br/clientes/tupara/assets/img/iconCalender.png) no-repeat;
                 width: 25px;
                 height: 25px;
                 position: absolute;
@@ -143,8 +148,8 @@ header{
                 margin-top: -6px;
                 display: inline-flex;
                 button#btn-plus, button#btn-minus {
-                    color: #EA6331;
-                    border: 1px solid #EA6331;
+                    color: var(--laranja);
+                    border: 1px solid var(--laranja);
                     width: 24px;
                     height: 24px;
                     line-height: 20px;
@@ -181,12 +186,12 @@ header{
         height: 720px;
         width: 100%;
         border-radius: 20px;
-        background: url(../img/corpoBanner.png) no-repeat top center;
+        background: url(https://idzagencia.com.br/clientes/tupara/assets/img/corpoBanner.png) no-repeat top center;
         &::before{
             content: "";
             width: 180px;
             height: 400px;
-            background:  url(../img/efeitoBanner.png) no-repeat top left / contain;
+            background:  url(https://idzagencia.com.br/clientes/tupara/assets/img/efeitoBanner.png) no-repeat top left / contain;
             position: absolute;
             top: 0;
             left: 40px;
@@ -221,7 +226,7 @@ header{
             }
             a {
                 border-radius: 26px;
-                background: #EA6331;
+                background: var(--laranja);
                 color: #FFF;
                 font-size: 16px;
                 font-style: normal;
@@ -235,7 +240,7 @@ header{
                     position: absolute;
                     top: -9px;
                     left: 0px;
-                    color: #EA6331;
+                    color: var(--laranja);
                     font-size: 18px;
                     background: #FFF;
                     border-radius: 100px;
@@ -259,7 +264,7 @@ header{
         width: 90%;
         margin: auto;
         input[type="date"]::-webkit-calendar-picker-indicator {
-            background: url(../img/iconCalender.png) no-repeat;
+            background: url(https://idzagencia.com.br/clientes/tupara/assets/img/iconCalender.png) no-repeat;
             width: 25px;
             height: 25px;
             position: absolute;
@@ -321,8 +326,8 @@ header{
         .custom-number-input{
             display: inline-flex;
             button#btn-plus, button#btn-minus {
-                color: #EA6331;
-                border: 1px solid #EA6331;
+                color: var(--laranja);
+                border: 1px solid var(--laranja);
                 width: 24px;
                 height: 24px;
                 line-height: 20px;
@@ -344,7 +349,7 @@ header{
 }
 .nossas-acomodacoes{
     padding: 60px 0;
-    background: url(../img/bgAcomodacoes.png) no-repeat center bottom / contain;
+    background: url(https://idzagencia.com.br/clientes/tupara/assets/img/bgAcomodacoes.png) no-repeat center bottom / contain;
     min-height: 600px;
     i {
         text-align: center;
@@ -488,13 +493,13 @@ header{
     }
 }
 .video{
-    background: url(../img/bg-video.png) no-repeat center / cover;
+    background: url(https://idzagencia.com.br/clientes/tupara/assets/img/bg-video.png) no-repeat center / cover;
     height: 500px;
     text-align: center;
     position: relative;
     a{
         width: 100%;
-        height: 100px;
+        height: 400px;
         display: inline-block;
         span {
             color: #FFF;
@@ -518,14 +523,14 @@ header{
         top: 50%;
         margin-top: -70px;
         margin-left: -70px;
-        background: url(../img/play.png) no-repeat center / cover;
+        background: url(https://idzagencia.com.br/clientes/tupara/assets/img/play.png) no-repeat center / cover;
     }
     &.cabana{
-        background: url(../img/bg-cabana.png) no-repeat center / cover;
+        background: url(https://idzagencia.com.br/clientes/tupara/assets/img/bg-cabana.png) no-repeat center / cover;
     }
 }
 .estrutura{
-    background: #F5F5F5 url(../img/bgEstrutura.png) no-repeat center left;
+    background: #F5F5F5 url(https://idzagencia.com.br/clientes/tupara/assets/img/bgEstrutura.png) no-repeat center left;
     padding: 80px 0;
     h4{
         color: #EC6D3E;
@@ -554,14 +559,14 @@ header{
         }
     }
     img{
-        width: 80%;
+        width: 90%;
     }
     &.interna{
         img{
             width: 100%;
         }
     }
-    a{
+    a {
         border-radius: 50px;
         background: #034C72;
         color: #FFF !important;
@@ -570,6 +575,8 @@ header{
         font-weight: 500;
         line-height: normal;
         padding: 10px 30px;
+        display: inline-block;
+        margin-top: 20px;
     }
     ul{
         list-style: none;
@@ -577,48 +584,53 @@ header{
         padding: 0;
         margin-bottom: 20px;
         li{
-            border-radius: 7px;
-            border: 1px solid #DAD2C7;
-            background: #F5F5F5;
-            padding: 30px;
-            width: calc(50% - 40px);
+            padding: 0 20px 20px 0;
+            width: calc(50% - 6px);
             display: inline-block;
-            margin-bottom: 20px;
-            margin-right: 20px;
-            &:hover{
-                background: #FFF;
-                i{
-                    color: #EC6D3E;
+            float: left;
+            > div{
+                border-radius: 7px;
+                border: 1px solid #DAD2C7;
+                background: #F5F5F5;
+                padding: 30px;
+                display: inline-block;
+                &:hover{
+                    background: #FFF;
+                    i{
+                        color: #EC6D3E;
+                    }
                 }
-            }
-            i{
-                color: #034C72;
-                margin-bottom: 4px;
-                font-size: 30px;
-            }
-            h5{
-                color: #5E5E5E;
-                font-size: 16px;
-                font-style: normal;
-                font-weight: 700;
-                line-height: normal;
-                margin-bottom: 6px;
-                margin-top: 0px;
-            }
-            p{
-                color: #5E5E5E;
-                font-size: 14px;
-                font-style: normal;
-                font-weight: 400;
-                line-height: normal;
-                letter-spacing: 0.28px;
-                margin-top: 0px;
+                i{
+                    color: #034C72;
+                    margin-bottom: 4px;
+                    font-size: 30px;
+                }
+                h5{
+                    color: #5E5E5E;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    margin-bottom: 6px;
+                    margin-top: 0px;
+                }
+                p{
+                    min-height: 65px;
+                    color: #5E5E5E;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    letter-spacing: 0.28px;
+                    margin-top: 0px;
+                }
             }
         }
     }
 }
 .galeria{
     overflow: hidden;
+    position: relative;
     .img{
         width: 100%;
         height: 300px;
@@ -632,6 +644,16 @@ header{
         > div{
             padding: 0;
         }
+    }
+    #lightbox-counter{
+        position: absolute; 
+        top: 10px; 
+        right: 10px; 
+        background: rgba(0, 0, 0, 0.7); 
+        color: white; 
+        padding: 5px 10px; 
+        border-radius: 5px; 
+        z-index: 12;
     }
 }
 .localizacao{
@@ -657,7 +679,6 @@ header{
         margin-top: 10px;
     }
     h2{
-        font-family: 'BrandRegular';
         color: #605C56;
         text-align: center;
         font-size: 24px;
@@ -715,6 +736,7 @@ header{
                     width: 80%;
                     margin: auto;
                     margin-bottom: 20px;
+                    display: inline-block;
                 }
                 form{
                     position: relative;
@@ -722,7 +744,7 @@ header{
                         position: absolute;
                         top: 3px;
                         left: 10px;
-                        color: #EA6331;
+                        color: var(--laranja);
                         font-size: 20px;
                     }
                     input{
@@ -742,7 +764,7 @@ header{
                     }
                     button{
                         border-radius: 100px;
-                        background: #EA6331;
+                        background: var(--laranja);
                         width: 40px;
                         height: 40px;
                         display: inline-block;
@@ -809,7 +831,7 @@ header{
                    text-align: left;
                     i{
                         border-radius: 40px;
-                        background: #EA6331;
+                        background: var(--laranja);
                         width: 40px;
                         height: 40px;
                         display: inline-block;
@@ -935,7 +957,7 @@ header{
 
 }
 .reservas{
-    background: #F5F5F5 url(../img/banner-reserva.png) no-repeat center / cover;
+    background: #F5F5F5 url(https://idzagencia.com.br/clientes/tupara/assets/img/banner-reserva.png) no-repeat center / cover;
     height: 360px;
     position: relative;
     padding: 30px;
@@ -954,7 +976,7 @@ header{
         content: "";
         width: 770px;
         height: 500px;
-        background: url(../img/img-reserva.png);
+        background: url(https://idzagencia.com.br/clientes/tupara/assets/img/img-reserva.png);
         position: absolute;
         bottom: 0;
         right: 0;
@@ -976,7 +998,7 @@ header{
     }
     a{
         border-radius: 50px;
-        background: #EA6331;
+        background: var(--laranja);
         color: #FFF !important;
         font-size: 16px;
         font-style: normal;
@@ -1050,7 +1072,6 @@ footer{
 }
 
 // Busca
-
 .resultado{
     padding: 60px 0;
     min-height: 600px;
@@ -1243,7 +1264,7 @@ footer{
         display: inline-block;
         margin-bottom: 20px;
         i{
-            color: #EA6331;
+            color: var(--laranja);
         }
     }
     .nota{
@@ -1354,7 +1375,7 @@ footer{
                     text-align: right;
                     i{
                         font-size: 16px;
-                        color: #EA6331;
+                        color: var(--laranja);
                         margin-right: 5px;
                     }
                     &:nth-child(odd){
@@ -1388,7 +1409,7 @@ footer{
                 margin-top: -6px;
             }
             input[type="date"]::-webkit-calendar-picker-indicator {
-                background: url(../img/iconCalender.png) no-repeat;
+                background: url(https://idzagencia.com.br/clientes/tupara/assets/img/iconCalender.png) no-repeat;
                 width: 25px;
                 height: 25px;
                 position: absolute;
@@ -1396,7 +1417,7 @@ footer{
                 top: 0;
                 margin-top: -2px;
             }
-            #checkout{
+            #checkout, #checkoutReserva{
                 padding-left: 30px;
                 color: #5E5E5E;
                 font-size: 14px;
@@ -1405,7 +1426,7 @@ footer{
                 line-height: normal;
                 background: none;
             }
-            #checkin{
+            #checkin, #checkinReserva{
                 padding-left: 30px;
                 color: #5E5E5E;
                 font-size: 14px;
@@ -1466,8 +1487,8 @@ footer{
                 display: inline-flex;
                 margin-left: 28;
                 button#btn-plus, button#btn-minus {
-                    color: #EA6331;
-                    border: 1px solid #EA6331;
+                    color: var(--laranja);
+                    border: 1px solid var(--laranja);
                     width: 24px;
                     height: 24px;
                     line-height: 20px;
@@ -1486,7 +1507,7 @@ footer{
                 }
             }
         }
-        .btn-reserva{
+        .btn-reserva, .abrir-reserva{
             border-radius: 60px;
             background: #034C72;
             color: #FFF;
@@ -1499,13 +1520,15 @@ footer{
             text-align: center;
             border: none;
         }
+        .abrir-reserva{
+            display: none;
+        }
     }
 }
 
 // sobre
-
 .sobre{
-    background: #F5F5F5 url(../img/bgEstrutura.png) no-repeat center left;
+    background: #F5F5F5 url(https://idzagencia.com.br/clientes/tupara/assets/img/bgEstrutura.png) no-repeat center left;
     padding: 80px 0;
     h4{
         color: #EC6D3E;
@@ -1545,10 +1568,9 @@ footer{
         letter-spacing: 0.32px;  
     }
 }
-
 .linha{
     padding: 60px 0;
-    background: url(../img/bgAcomodacoes.png) no-repeat center bottom / contain;
+    background: #F5F5F5 url(https://idzagencia.com.br/clientes/tupara/assets/img/bgAcomodacoes.png) no-repeat center bottom / contain;
     min-height: 600px;
     i {
         text-align: center;
@@ -1668,6 +1690,148 @@ footer{
     }
 }
 
+// Contato
+.contato{
+    padding: 60px 0;
+    background: #F5F5F5;
+    h4{
+        color: #EC6D3E;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 3.2px;
+        text-align: left;
+        margin-bottom: 10px;
+       
+    }
+    h2{
+        color: #034C72;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        letter-spacing: 0.48px;
+        margin-top: 0;
+        text-align: left;
+        margin-bottom: 20px;
+        display: inline-block;
+        font-family: 'BrandRegular';
+        strong{
+            color: #EC6D3E;
+        }
+    }
+    .formContato{
+        input{
+            width: 100%;
+            margin-bottom: 10px;
+            border-radius: 8.5px;
+            border: 1px solid #DDD;
+            background: #FFF;
+            padding: 10px;
+        }
+        textarea{
+            width: 100%;
+            margin-bottom: 10px;
+            border-radius: 8.5px;
+            border: 1px solid #DDD;
+            background: #FFF;
+            padding: 10px;
+            height: 160px;
+        }
+        button{
+            border-radius: 60px;
+            background: #034C72;  
+            color: #FFF;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            max-width: 320px;
+            width: 100%;
+            margin: auto;
+            border: none;
+            padding: 10px 20px;
+            display: inline-block;
+        }
+    }
+    .dados{
+        border-radius: 10px;
+        background: #034C72;
+        padding: 40px 20% 40px 70px;
+        margin-top: 30px;
+        &::before{
+            content: "";
+            position: absolute;
+            bottom: 0;
+            right: -54px;
+            width: 181px;
+            height: 173px;
+            background: url(/assets/img/imgFolha.png) no-repeat center;
+        }
+        h6{
+            color: #FFF;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 20px;
+        }
+        ul{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            li{
+                color: #FFF;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                padding: 15px 0;
+                margin: 0;
+                display: inline-block;
+                position: relative;
+                height: 40px;
+                line-height: 18px;
+                width: 100%;
+                i{
+                    color: var(--laranja);
+                    margin-right: 5px;
+                    font-size: 18px;
+                    margin-bottom: 10px;
+                    float: left;
+                }
+                &:nth-child(2)::before{
+                    width: 60px;
+                    height: 1px;
+                    content: "";
+                    background: #FFFF;
+                    position: absolute;
+                    bottom: -4px;
+                    left: 0;
+                }
+            }
+        }
+    }
+    .row{
+        > div:nth-child(2){
+            padding-left: 10%;
+            padding-top: 110px;
+        }
+    }
+}
+
+.extensao-mobile{
+    display: none;
+}
+
+@media(min-width: 1024px) {
+    header{
+        &.interno{
+            .navbar-collapse{
+                display: none !important;
+            }
+        }
+    }
+}
 @media(min-width: 1600px) and (max-width: 1800px) {
 }
 @media(min-width: 1380px) and (max-width: 1600px) {
@@ -1675,9 +1839,569 @@ footer{
 @media(min-width: 992px) and (max-width: 1380px) {
 }
 @media(min-width: 0px) and (max-width: 992px) {
+    header {
+        padding: 20px 20px;
+        .navbar{
+            .social-icons{
+                display: none;
+            }
+            .navbar-toggler{
+                border: none;
+                padding: 10px 0;
+                font-size: 23px;
+                color: var(--laranja);
+                .navbar-toggler-icon{
+                    background: none;
+                    line-height: 32px;
+                    color: var(--laranja);
+                }
+            }
+            .active {
+                color: #EA6331;
+                border-left: 3px solid #EA6331;
+                padding-left: 20px !important;
+            }
+            .close{
+                display: block;
+                background: none;
+                line-height: 32px;
+                color: var(--laranja);
+                font-size: 30px;
+                opacity: 1;
+                position: absolute;
+                top: 40px;
+                right: 30px;
+            }
+        }
+    }
+    .banner-slider {
+        height: 380px;
+        .banner-container{
+            background: url(https://idzagencia.com.br/clientes/tupara/assets/img/banner-mobile.png) no-repeat top center / cover;
+            height: 380px;
+            &::before {
+                content: "";
+                width: 58px;
+                height: 85px;
+                background: url(https://idzagencia.com.br/clientes/tupara/assets/img/efeitoBanner.png) no-repeat top left / contain;
+                top: 0px;
+                left: 12px;
+            }
+            .banner-content {
+                h2 {
+                    font-size: 14px;
+                    line-height: 24px;
+                    width: 100%;
+                    padding-left: 40px;
+                    margin-bottom: 20px;
+                }
+                h3 {
+                    font-size: 8px;
+                    letter-spacing: 1.2px;
+                    padding-left: 40px;
+                    margin-top: 10px;
+                }
+                a {
+                    font-size: 13px;
+                    padding: 6px 19px 6px 55px;
+                    margin-left: 35px;
+                    i {
+                        width: 50px;
+                        height: 50px;
+                        top: -9px;
+                        left: 0px;
+                        font-size: 18px;
+                        border-radius: 100px;
+                        line-height: 50px;
+                    }
+                }
+            }
+        }  
+    }
+    .barra-busca, header.interno {
+        .busca {
+            background: #FFF;
+            -webkit-filter: inherit;
+            filter: inherit;
+            box-shadow: 1px 0px 14px 0px rgba(82, 82, 82, 0.2);
+            border: 1px solid rgba(82, 82, 82, 0.2);
+            border-radius: 30px;
+            padding: 13px 22px;
+            .btn-search {
+                font-size: 15px;
+                padding: 12px 28px;
+                width: 100%;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+            input[type="date"]::-webkit-calendar-picker-indicator {
+                background: none;
+        
+            }
+            #checkout{
+                padding-left: 18px;
+                background: url(https://idzagencia.com.br/clientes/tupara/assets/img/iconCalender.png) no-repeat;
+                background-size: 16px;
+                background-position: -1px 6px;
+            }
+            #checkin{
+                padding-left: 18px;
+                background: url(https://idzagencia.com.br/clientes/tupara/assets/img/iconCalender.png) no-repeat;
+                background-size: 16px;
+                background-position: -1px 6px;
+            }
+        }
+    }
+    .nossas-acomodacoes {
+        padding: 20px 20px 60px;
+        background: url(https://idzagencia.com.br/clientes/tupara/assets/img/bgAcomodacoesMobile.png) no-repeat center 280px;
+        .item-acomodacoes {
+            margin-top: 20px;
+        }
+        .down{
+            display: none;
+        }
+    }
+    .video{
+        height: 400px;
+        &::before {
+            width: 100px;
+            height: 100px;
+            margin-top: -50px;
+            margin-left: -50px;
+        }
+        a{
+            span {
+                font-size: 14px;
+                top: 270px;
+            }
+        }
+    }
+    .estrutura{
+        overflow: hidden;
+        padding: 80px 20px;
+        h4{
+            text-align: center;
+        }
+        h2{
+            text-align: center;
+            font-size: 21px;
+            margin-bottom: 40px;
+        }
+        img{
+            width: 100%;
+        }
+        .col-md-6{
+            &:first-child{
+                order: 2;
+            }
+            &:nth-child(2){
+                order: 1;
+            }
+        }
+        ul{
+            li {
+                margin-right: 10px;
+                padding: 14px;
+                width: calc(50% - 12px);
+                &:nth-child(2){
+                    margin-right: 0;
+                }
+                &:nth-child(4){
+                    margin-right: 0;
+                }
+                h5{
+                    font-size: 13px;
+                }
+            }
+        }
+        img{
+            margin-top: 20px;
+            margin-bottom: 30px;
+        }
+        a {
+            border-radius: 50px;
+            background: #034C72;
+            font-size: 16px;
+            padding: 14px 30px;
+            margin: auto;
+            display: flow-root;
+            text-align: center;
+            width: 80%;
+        }
+        .slider-container{
+            padding-right: 60px;
+            height: 300px;
+            margin-left: -30px;
+            .slick-list {
+                overflow: inherit;
+                .slick-track{
+                    height: 300px;
+                    display: inline-block;
+                }
+                li.slick-slide.slick-current.slick-active{
+                    div{
+                        background: var(--branco);
+                    }
+                }
+            }
+            button.slick-prev.slick-arrow{
+                &::before{
+                    display: none;
+                }
+                z-index: 10;
+                left: 34px;
+                top: 260px;
+                width: 19px;
+                height: 20px;
+                background: url(https://idzagencia.com.br/clientes/tupara/assets/img/arrow-prev.png) no-repeat;
+            }
+            button.slick-next.slick-arrow{
+                &::before{
+                    display: none;
+                }
+                z-index: 10;
+                left: 80px;
+                top: 260px;
+                width: 19px;
+                height: 20px;
+                background: url(https://idzagencia.com.br/clientes/tupara/assets/img/arrow-next.png) no-repeat;
+            }
+        }
+    }
+    .galeria {
+        .img {
+            height: 150px;
+            border: 2px solid #FFF;
+            &.full {
+                height: 300px;
+            }
+        }
+    }
+    .localizacao{
+        padding-bottom: 0;
+        .mapa{
+            background: none;
+            height: 660px;
+            #map{
+                margin-top: 620px;
+            }
+            .endereco {
+                right: 5% !important;
+                bottom: 560px;
+                width: 90%;
+            }
+        }
+        .row{
+            .col-md-12{
+                padding: 0;
+            }
+        }
+
+    }
+    .depoimentos {
+        .slick-slide {
+            .item-depoimento{
+                background: var(--branco);
+            }
+        }
+        button.slick-prev.slick-arrow{
+            &::before{
+                display: none;
+            }
+            z-index: 10;
+            left: 34px;
+            top: 380px;
+            width: 19px;
+            height: 20px;
+            background: url(https://idzagencia.com.br/clientes/tupara/assets/img/arrow-prev.png) no-repeat;
+        }
+        button.slick-next.slick-arrow{
+            &::before{
+                display: none;
+            }
+            z-index: 10;
+            left: 80px;
+            top: 380px;
+            width: 19px;
+            height: 20px;
+            background: url(https://idzagencia.com.br/clientes/tupara/assets/img/arrow-next.png) no-repeat;
+        }
+    }
+    .reservas{
+        height: 512px;
+        width: 90%;
+        padding: 20px;
+        background: #F5F5F5 url(https://idzagencia.com.br/clientes/tupara/assets/img/banner-reservaMobile.png) no-repeat center / cover;
+        margin-left: 5%;
+        &::after, &::before {
+            display: none;
+        }
+        h2 {
+            font-size: 24px;
+            line-height: 45px;
+            width: 85%;
+            letter-spacing: 0.68px;
+        }    
+    }
+    footer {
+        text-align: center;
+        img{
+            margin-bottom: 30px;
+        }
+        ul.sitemap {
+            display: none;
+        }
+        ul {
+            width: 80%;
+            margin: auto;
+            border-top: 1px solid #DAD2C7;
+            padding: 20px 0;
+        }
+        .social{
+            border: none;
+            li{
+                font-size: 25px;
+            }
+        }
+    }
+    .copy {
+        padding: 20px;
+    }
+    .navbar-collapse {
+        position: fixed;
+        background: #FFF;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        padding: 70px 0px 50px 0 50px;
+        z-index: 9999;
+        left: 0;
+        border-radius: 0;
+        .nav-link {
+            border-bottom: 1px solid #D7D7D7;
+            padding: 12px 0;
+        }
+    }
+    .busca-top{
+        position: fixed;
+        bottom: 10px;
+        z-index: 999;
+        width: 90%;
+        .btn-search {
+            margin-right: 0 !important;
+        }
+        .busca {
+            input[type="date"]::-webkit-calendar-picker-indicator {
+                background: none;
+            }
+            #checkout{
+                padding-left: 18px;
+                background: url(https://idzagencia.com.br/clientes/tupara/assets/img/iconCalender.png) no-repeat;
+                background-size: 16px;
+                background-position: -1px 6px;
+                &::placeholder{
+                    color: #000;
+                }
+            }
+            #checkin{
+                padding-left: 18px;
+                background: url(https://idzagencia.com.br/clientes/tupara/assets/img/iconCalender.png) no-repeat;
+                background-size: 16px;
+                background-position: -1px 6px;
+                &::placeholder{
+                    color: #000;
+                }
+                &::before {
+                    content: attr(data-placeholder);
+                    position: absolute;
+                    top: 50%;
+                    left: 10px;
+                    transform: translateY(-50%);
+                    color: #aaa;
+                    pointer-events: none;
+                }
+            }
+        }
+
+    }
+    .sobre{
+        text-align: center;
+        padding-left: 20px;
+        padding-right: 20px;
+        img {
+            width: 100%;
+            margin-bottom: 40px;
+        }
+    }
+    .linha{
+        overflow: hidden;
+        padding-top: 0;
+        background-size: 1000px;
+        .linha-slider {
+            padding-right: 100px;
+            .slick-list{
+                overflow: inherit;
+                margin-left: -5px;
+            }
+        }
+    }
+    .resultado{
+        padding: 60px 20px;
+    }
+    .galeria{
+        img{
+            display: none;
+        }
+    }
+    .galeria-acoes ul li a{
+        font-size: 0;
+        height: 56px !important;
+        display: inline-block;
+        i{
+            font-size: 20px;
+        }
+    }
+    .acomodacoes{
+        .busca-top{
+            display: none;
+        }
+    }
+    .detalhes{
+        padding: 60px 20px;
+        margin-top: 0;
+        ul {
+            li {
+                width: 100%;
+            }
+        }
+        .resumo {
+            border-radius: 12.836px;
+            border: 1.07px solid #DDD;
+            background: #FFF;
+            padding: 20px 30px;
+            position: fixed;
+            bottom: 12px;
+            z-index: 999;
+            left: 5%;
+            width: 90%;
+            .header {
+                width: 50%;
+                display: inline-block;
+                border: none;
+                margin-bottom: 0;
+            }
+            .abrir-reserva {
+                width: 40%;
+                display: inline-block;
+                float: right;
+                margin-top: 20px;
+                display: none;
+            }
+            &.fechado{
+                .btn-reserva, .voltar {
+                    display: none;
+                }
+                .abrir-reserva{
+                    display: block;
+                }
+                .busca, .remunido{
+                    display: none;
+                }
+            }
+           .voltar {
+                border: 1px solid #CDCDCD;
+                border-radius: 100px;
+                width: 40px;
+                height: 40px;
+                text-align: center;
+                line-height: 38px;
+                position: absolute;
+                top: 20px;
+                right: 20px;
+            }
+            .busca{
+                input[type="date"]::-webkit-calendar-picker-indicator {
+                    background: none;
+                }
+                #checkout, #checkoutReserva{
+                    padding-left: 30px;
+                    background: url(https://idzagencia.com.br/clientes/tupara/assets/img/iconCalender.png) no-repeat;
+                    background-size: 24px;
+                    background-position: 0 0;
+                }
+                #checkin, #checkinReserva{
+                    padding-left: 30px;
+                    background: url(https://idzagencia.com.br/clientes/tupara/assets/img/iconCalender.png) no-repeat;
+                    background-size: 24px;
+                    background-position: 0 0;
+                }
+                .custom-number-input {
+                    margin-left: 28px;
+                }
+                .hospedes{
+                    background: #F5F5F5 url(https://idzagencia.com.br/clientes/tupara/assets/img/icon-user.png) no-repeat 11px 16px !important;
+                }
+            }
+
+        }
+    }
+    .extensao-mobile{
+        display: block;
+        h3{
+            color: #EA6331;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            margin-top: 40px;
+            margin-bottom: 10px;
+        }
+        a{
+            background: #034C72;
+            border-radius: 8px;
+            display: inline-block;
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 20px;
+            position: relative;
+            h4{
+                color: #FFF;
+                font-size: 14.388px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                letter-spacing: 0.719px;
+                font-family: 'BrandRegular';
+            }
+            span{
+                color: #FFF;
+                font-size: 8.5px;
+                font-style: normal;
+                font-weight: 800;
+                line-height: normal;
+                letter-spacing: 0.51px;
+                text-transform: uppercase;
+            }
+            i{
+                color: #EFC782;
+                position: absolute;
+                top: 16px;
+                right: 21px;
+                font-size: 36px;
+                span{
+                    font-size: 30px;
+                    font-weight: 400;
+                    top: 5px;
+                    position: absolute;
+                    right: 3px;
+                    color: #EFC782;
+                }
+            }
+        }
+    }
 }
 @media(min-width: 480px) and (max-width: 992px) {
-
 }
 @media(min-width: 480px) and (max-width: 992px) {
 }

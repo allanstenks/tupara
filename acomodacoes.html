@@ -17,9 +17,7 @@
 
 </head>
 <body>
-
-
-    <header class="interno">
+    <header class="interno acomodacoes">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container">
                 <!-- Logo à esquerda -->
@@ -28,24 +26,45 @@
                 </a>
 
                 <!-- Menu centralizado -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon">
+                        <i class="fa fa-bars" aria-hidden="true"></i>
+                    </span>
                 </button>
-                <div class="busca-top" id="navbarNav">
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://idzagencia.com.br/clientes/tupara/">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://idzagencia.com.br/clientes/tupara/sobre.html">O Tupará</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://idzagencia.com.br/clientes/tupara/resultado.html">Hospedagens</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Reservas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://idzagencia.com.br/clientes/tupara/contato.html">Fale Conosco</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="busca-top">
                     <div class="row busca justify-content-center">
-                        <div class="col-md-3">
+                        <div class="col-6 col-md-3">
                             <label for="checkout" class="form-label">CHECK-OUT</label>
                             <div class="input-group">
                                 <input type="date" id="checkin" class="form-control" placeholder="Insira a data">
                             </div>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-6 col-md-3">
                             <label for="checkout" class="form-label">CHECK-OUT</label>
                             <div class="input-group">
                                 <input type="date" id="checkout" class="form-control" placeholder="Insira a data">
                             </div>
                         </div>
-                        <div class="col-md-2">
+                        <div class="col-md-2 d-none d-md-block">
                             <label for="hospedes" class="form-label">HÓSPEDES</label>
                             <div class="custom-number-input">
                                 <button id="btn-minus" onclick="decreaseGuests()">-</button>
@@ -69,30 +88,30 @@
         </nav>
     </header>
 
-    <div class="galeria">
+    <div class="galeria" uk-lightbox="animation: fade">
         <div class="container-fluid">
             <div class="row  justify-content-center">
                 <div class="col-md-12 galeria-slider">
-                    <div class="item-galeria">
-                        <img src="/assets/img/galeria/galeria1.png"/>
-                    </div>
-                    <div class="item-galeria">
-                        <img src="/assets/img/galeria/galeria2.png"/>
-                    </div>
-                    <div class="item-galeria">
-                        <img src="/assets/img/galeria/galeria3.png"/>
-                    </div>
-                    <div class="item-galeria">
-                        <img src="/assets/img/galeria/galeria1.png"/>
-                    </div>
-                    <div class="item-galeria">
-                        <img src="/assets/img/galeria/galeria2.png"/>
-                    </div>
-                    <div class="item-galeria">
-                        <img src="/assets/img/galeria/galeria3.png"/>
-                    </div>
+                    <a href="assets/img/galeria/galeria1.png" class="item-galeria" data-uk-lightbox="animation: slide" style="background: url(https://idzagencia.com.br/clientes/tupara/assets/img/galeria/galeria1.png) no-repeat center / cover;">
+                        <img src="assets/img/galeria/galeria1.png"/>
+                    </a>
+                    <a href="assets/img/galeria/galeria2.png" class="item-galeria" data-uk-lightbox="animation: slide" style="background: url(https://idzagencia.com.br/clientes/tupara/assets/img/galeria/galeria2.png) no-repeat center / cover;">
+                        <img src="assets/img/galeria/galeria2.png"/>
+                    </a>
+                    <a href="assets/img/galeria/galeria3.png" class="item-galeria" data-uk-lightbox="animation: slide" style="background: url(https://idzagencia.com.br/clientes/tupara/assets/img/galeria/galeria3.png) no-repeat center / cover;">
+                        <img src="assets/img/galeria/galeria3.png"/>
+                    </a>
+                    <a href="assets/img/galeria/galeria1.png" class="item-galeria" data-uk-lightbox="animation: slide" style="background: url(https://idzagencia.com.br/clientes/tupara/assets/img/galeria/galeria1.png) no-repeat center / cover;">
+                        <img src="assets/img/galeria/galeria1.png"/>
+                    </a>
+                    <a href="assets/img/galeria/galeria2.png" class="item-galeria" data-uk-lightbox="animation: slide" style="background: url(https://idzagencia.com.br/clientes/tupara/assets/img/galeria/galeria2.png) no-repeat center / cover;">
+                        <img src="assets/img/galeria/galeria2.png"/>
+                    </a>
+                    <a href="assets/img/galeria/galeria3.png" class="item-galeria" data-uk-lightbox="animation: slide" style="background: url(https://idzagencia.com.br/clientes/tupara/assets/img/galeria/galeria3.png) no-repeat center / cover;">
+                        <img src="assets/img/galeria/galeria3.png"/>
+                    </a>
                 </div>
-
+                <div id="lightbox-counter">1/6</div>
             </div>
         </div>
     </div>
@@ -102,7 +121,7 @@
             <div class="row  justify-content-center">
                 <div class="col-md-12">
                     <ul>
-                        <li><a><i><span class="iconify" data-icon="ri:grid-fill" data-inline="false"></span></i> Veja mais Fotos</a></li>
+                        <li><a id="ver-mais-fotos"><i><span class="iconify" data-icon="ri:grid-fill" data-inline="false"></span></i> Veja mais Fotos</a></li>
                         <li><a><i><span class="iconify" data-icon="ph:heart" data-inline="false"></span></i> Compartilhar</a></li>
                     </ul>
                 </div>
@@ -124,7 +143,7 @@
                         <span class="iconify" data-icon="ic:round-star" data-inline="false"></span>
                         <span class="iconify" data-icon="ic:round-star" data-inline="false"></span>
                     </i>
-                </div>
+                  </div>
                   <p>Descubra o Baiá, um refúgio do glamping que combina o charme rústico com o conforto moderno, oferecendo uma experiência única em meio à natureza. Localizada em um cenário deslumbrante, o Baiá é o destino perfeito para aqueles que buscam escapar da rotina e se reconectar com a tranquilidade e a beleza natural.</p>
                 
                   <h2>Comodidas</h2>
@@ -184,30 +203,31 @@
                   </ul>
                 </div>
                 <div class="col-md-4">
-                  <div class="resumo">
+                  <div class="resumo fechado">
                         <div class="header">
+                            <i class="fa fa-arrow-left voltar"></i>
                             <span>A partir de</span>
                             <h4><span>R$</span><strong>200</strong><span>por noite</span></h4>
                         </div>
                         <div class="busca">
                             <div class="row busca justify-content-center">
-                                <div class="col-md-6">
-                                    <label for="checkout" class="form-label">CHECK-OUT</label>
+                                <div class="col-12 col-md-6">
+                                    <label for="checkout" class="form-label">CHECK-IN</label>
                                     <div class="input-group">
-                                        <input type="date" id="checkin" class="form-control" placeholder="Insira a data">
+                                        <input type="date" id="checkinReserva" class="form-control" placeholder="Insira a data">
                                     </div>
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-12 col-md-6">
                                     <label for="checkout" class="form-label">CHECK-OUT</label>
                                     <div class="input-group">
-                                        <input type="date" id="checkout" class="form-control" placeholder="Insira a data">
+                                        <input type="date" id="checkoutReserva" class="form-control" placeholder="Insira a data">
                                     </div>
                                 </div>
-                                <div class="col-md-12">
+                                <div class="col-md-12 hospedes">
                                     <label for="hospedes" class="form-label">HÓSPEDES</label>
                                     <div class="custom-number-input">
                                         <button id="btn-minus" onclick="decreaseGuests()">-</button>
-                                        <input type="number" id="num-hospedes" value="1" min="1" readonly>
+                                        <input type="number" id="num-hospedesReserva" value="1" min="1" readonly>
                                         <button id="btn-plus" onclick="increaseGuests()">+</button>
                                     </div>
                                 </div>
@@ -221,9 +241,9 @@
                                 <li>R$500</li>
                             </ul>
                         </div>
-                        <button class="btn-reserva">Reserve Agora</button>
+                        <button class="btn-reserva">Reserve agora</button>
+                        <button class="abrir-reserva">Reserve</button>
                     </div>
-                  </div>
                 </div>
             </div>
         </div>
@@ -233,7 +253,7 @@
         <div class="container">
             <div class="row busca justify-content-center">
                 <div class="col-md-12">
-                    <a href="https://www.youtube.com/watch?v=nU_SfYqfdp0" data-uk-lightbox onclick="console.log('Video clicked')">
+                    <a href="https://www.youtube.com/watch?v=nU_SfYqfdp0" data-uk-lightbox>
                         <i></i>
                         <span>VEJA O VIDEO</span>
                     </a>
@@ -245,34 +265,46 @@
     <div class="estrutura">
         <div class="container">
             <div class="row busca justify-content-center">
-                <div class="col-md-6">
-                    <img src="/assets/img/imgEstruturaInterna.png"/>
+                <div class="col-md-6 d-none d-md-block">
+                    <img src="assets/img/imgEstruturaInterna.png"/>
                 </div>
                 <div class="col-md-6">
                     <h4>ESTRUTURA</h4>
                     <h2>Infraestrutura <strong>premium</strong> para aproveitar todos os  momentos</h2>
-                    <ul>
-                        <li>
-                            <i><span class="iconify" data-icon="ic:outline-directions-boat" data-inline="false"></span></i>
-                            <h5>Diversão na água</h5>
-                            <p>Desfrute da beleza natural às margens da Represa de Ituparanga.</p>
-                        </li>
-                        <li>
-                            <i><span class="iconify" data-icon="mingcute:shower-line" data-inline="false"></span></i>
-                            <h5>Banheiros completos</h5>
-                            <p>Nada como um banho quente depois de um dia cheio de atividades.</p>
-                        </li>
-                        <li>
-                            <i><span class="iconify" data-icon="tdesign:barbecue" data-inline="false"></span></i>
-                            <h5>Espaço Gourmet</h5>
-                            <p>Reúna amigos e família para um churrasco em nossa área gourmet.</p>
-                        </li>
-                        <li>
-                            <i><span class="iconify" data-icon="material-symbols:camping-outline" data-inline="false"></span></i>
-                            <h5>Área de camping</h5>
-                            <p>Conforto e natureza em nossa exclusiva área de camping.</p>
-                        </li>
-                    </ul>
+                    <img src="assets/img/imgEstruturaInterna.png" class="d-block d-md-none"/>
+                    
+                    <div class="slider-container">
+                        <ul class="estrutura-slider">
+                            <li>
+                                <div>
+                                    <i><span class="iconify" data-icon="ic:outline-directions-boat" data-inline="false"></span></i>
+                                    <h5>Diversão na água</h5>
+                                    <p>Desfrute da beleza natural às margens da Represa de Ituparanga.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <i><span class="iconify" data-icon="mingcute:shower-line" data-inline="false"></span></i>
+                                    <h5>Banheiros completos</h5>
+                                    <p>Nada como um banho quente depois de um dia cheio de atividades.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <i><span class="iconify" data-icon="tdesign:barbecue" data-inline="false"></span></i>
+                                    <h5>Espaço Gourmet</h5>
+                                    <p>Reúna amigos e família para um churrasco em nossa área gourmet.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <i><span class="iconify" data-icon="material-symbols:camping-outline" data-inline="false"></span></i>
+                                    <h5>Área de camping</h5>
+                                    <p>Conforto e natureza em nossa exclusiva área de camping.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                     <a>Faça sua Reserva</a>
                 </div>
             </div>
@@ -327,7 +359,7 @@
                 <div class="col-md-12 depoimento-slider">
                     <div>
                         <div class="item-depoimento">
-                            <div class="aspas"><img src="/assets/img/aspas.png"/></div>
+                            <div class="aspas"><img src="assets/img/aspas.png"/></div>
                             <i>
                                 <span class="iconify" data-icon="ic:round-star" data-inline="false"></span>
                                 <span class="iconify" data-icon="ic:round-star" data-inline="false"></span>
@@ -345,7 +377,7 @@
                     </div>
                     <div>
                         <div class="item-depoimento">
-                            <div class="aspas"><img src="/assets/img/aspas.png"/></div>
+                            <div class="aspas"><img src="assets/img/aspas.png"/></div>
                             <i>
                                 <span class="iconify" data-icon="ic:round-star" data-inline="false"></span>
                                 <span class="iconify" data-icon="ic:round-star" data-inline="false"></span>
@@ -363,7 +395,7 @@
                     </div>
                     <div>
                         <div class="item-depoimento">
-                            <div class="aspas"><img src="/assets/img/aspas.png"/></div>
+                            <div class="aspas"><img src="assets/img/aspas.png"/></div>
                             <i>
                                 <span class="iconify" data-icon="ic:round-star" data-inline="false"></span>
                                 <span class="iconify" data-icon="ic:round-star" data-inline="false"></span>
@@ -381,7 +413,7 @@
                     </div>
                     <div>
                         <div class="item-depoimento">
-                            <div class="aspas"><img src="/assets/img/aspas.png"/></div>
+                            <div class="aspas"><img src="assets/img/aspas.png"/></div>
                             <i>
                                 <span class="iconify" data-icon="ic:round-star" data-inline="false"></span>
                                 <span class="iconify" data-icon="ic:round-star" data-inline="false"></span>
@@ -417,7 +449,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-3">
-                    <img src="/assets/img/logo-tupara-rodape.png" />
+                    <img src="assets/img/logo-tupara-rodape.png" />
                 </div>
                 <div class="col-md-6">
                     <ul class="sitemap">
@@ -454,6 +486,7 @@
 
     <!-- Scripts -->
     <script src="assets/js/vendor/jquery.js"></script>
+    <script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
     <script src="assets/js/vendor/slick.min.js"></script>
     <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAMnla_E4CJSoYLaiKmSpubtZ7ih7_Epj8&callback=initMap" async defer></script>
