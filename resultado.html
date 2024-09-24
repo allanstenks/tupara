@@ -47,7 +47,7 @@
                             <a class="nav-link" href="resultado.html">Hospedagens</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="">Reservas</a>
+                            <a class="nav-link" data-toggle="modal" data-target="#reservaModal">Reservas</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="contato.html">Fale Conosco</a>
@@ -146,7 +146,7 @@
                         <div class="desc">
                             <h4><span class="material-symbols-outlined">camping</span> <b>Baiá</b></h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis lectus sed nisl ultricies facilisis.</p>
-                            <h6><strong>R$120</strong> por noite | Total R$240  </h6>
+                            <h6><strong>R$120</strong> por noite | Total R$240 </h6>
                             <span class="link"><i class="fa fa-arrow-right"></i><b>Saiba mais</b></span>
                         </div>
                     </a>
@@ -190,9 +190,54 @@
             </div>
         </div>
     </footer>
+
     <div class="copy">
         © Copyright 2024 Todos os direitos reservados Tupará Glamping - <a href="https://www.idzagencia.com.br">Agência IDZ</a>
     </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="reservaModal" tabindex="-1" role="dialog" aria-labelledby="reservaModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="reservaModalLabel">Reserva</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+                <div class="busca">
+                    <div class="row busca justify-content-center">
+                    <div class="col-12 col-md-6">
+                        <label for="checkinReserva" class="form-label">CHECK-IN</label>
+                        <div class="input-group">
+                        <input type="date" id="checkinReserva" class="form-control" placeholder="Insira a data">
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <label for="checkoutReserva" class="form-label">CHECK-OUT</label>
+                        <div class="input-group">
+                        <input type="date" id="checkoutReserva" class="form-control" placeholder="Insira a data">
+                        </div>
+                    </div>
+                    <div class="col-md-12 hospedes">
+                        <label for="hospedes" class="form-label">HÓSPEDES</label>
+                        <div class="custom-number-input">
+                        <button id="btn-minus" onclick="decreaseGuests()">-</button>
+                        <input type="number" id="num-hospedesReserva" value="1" min="1" readonly>
+                        <button id="btn-plus" onclick="increaseGuests()">+</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn-consultar">Verificar Disponilidade</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <!-- Scripts -->
     <script src="assets/js/vendor/jquery.js"></script>
