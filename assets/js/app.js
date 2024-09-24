@@ -239,28 +239,54 @@ var app = {
   },
 
   setupSearch: function() {
-    console.log("iniciando")
-    // Evento de clique para o botão "Ver Disponibilidade"
-    var searchButton = document.querySelector('.btn-search');
-    searchButton.addEventListener('click', function() {
-      var checkin = document.getElementById('checkin').value;
-      var checkout = document.getElementById('checkout').value;
-      var guests = document.getElementById('num-hospedes').value || 1; // Default para 1
+    console.log("iniciando");
 
-      // Validação simples para garantir que os campos de data estão preenchidos
-      if (!checkin || !checkout) {
-        alert('Por favor, preencha as datas de Check-in e Check-out.');
-        return;
-      }
+    // Evento de clique para todos os botões "Ver Disponibilidade"
+    var searchButtons = document.querySelectorAll('.btn-search');
 
-      // Simular a chamada da API e redirecionar
-      app.simulateApiCall({
-        checkin: checkin,
-        checkout: checkout,
-        guests: guests
-      }, true); // Passando true para indicar que devemos redirecionar
+    searchButtons.forEach(function(searchButton) {
+        searchButton.addEventListener('click', function(event) {
+            // Verifica se o botão pertence ao modal ou à página principal
+            var formId = event.target.getAttribute('data-form-id');  // Pega o identificador do formulário
+
+            // Define as variáveis de ID de acordo com o formulário/modal
+            var checkinField, checkoutField, guestsField;
+
+            if (formId === 'modal') {  // IDs usados no modal
+                checkinField = document.getElementById('checkinReserva-modal');
+                checkoutField = document.getElementById('checkoutReserva-modal');
+                guestsField = document.getElementById('num-hospedesReserva-modal');
+            } else {  // IDs usados fora do modal
+                checkinField = document.getElementById('checkin-' + formId);
+                checkoutField = document.getElementById('checkout-' + formId);
+                guestsField = document.getElementById('num-hospedes-' + formId);
+            }
+
+            // Verificar se os campos existem antes de tentar acessar seus valores
+            if (!checkinField || !checkoutField || !guestsField) {
+                console.error('Algum campo está faltando no formulário: checkin, checkout ou num-hospedes');
+                return;
+            }
+
+            var checkin = checkinField.value;
+            var checkout = checkoutField.value;
+            var guests = guestsField.value || 1; // Default para 1
+
+            // Validação simples para garantir que os campos de data estão preenchidos
+            if (!checkin || !checkout) {
+                alert('Por favor, preencha as datas de Check-in e Check-out.');
+                return;
+            }
+
+            // Simular a chamada da API e redirecionar
+            app.simulateApiCall({
+                checkin: checkin,
+                checkout: checkout,
+                guests: guests
+            }, true); // Passando true para indicar que devemos redirecionar
+        });
     });
-  },
+  }, 
 
   checkAccommodationAvailability: function() {
     // Recuperar os parâmetros da URL
@@ -570,3 +596,17 @@ var app = {
 $(document).ready(function() {
   app.init();
 });
+
+
+var modal = document.getElementById('reservaModal');
+
+var observer = new MutationObserver(function(mutations) {
+  mutations.forEach(function(mutation) {
+    if (modal.style.display === "block") {
+      console.log("Modal foi aberto");
+      app.setupSearch(); // Chama a função quando o modal é exibido
+    }
+  });
+});
+
+observer.observe(modal, { attributes: true, attributeFilter: ['style'] });
