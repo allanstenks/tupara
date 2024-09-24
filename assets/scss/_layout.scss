@@ -1461,7 +1461,7 @@ footer{
                 top: 0;
                 margin-top: -2px;
             }
-            #checkout, #checkoutReserva{
+            #checkout-lateral, #checkoutReserva-lateral{
                 padding-left: 30px;
                 color: #5E5E5E;
                 font-size: 14px;
@@ -1470,7 +1470,7 @@ footer{
                 line-height: normal;
                 background: none;
             }
-            #checkin, #checkinReserva{
+            #checkin-lateral, #checkinReserva-lateral{
                 padding-left: 30px;
                 color: #5E5E5E;
                 font-size: 14px;
@@ -1530,7 +1530,7 @@ footer{
                 margin-top: -6px;
                 display: inline-flex;
                 margin-left: 28;
-                button#btn-plus, button#btn-minus {
+                button#btn-plus-lateral, button#btn-minus-lateral {
                     color: var(--laranja);
                     border: 1px solid var(--laranja);
                     width: 24px;
@@ -1897,7 +1897,7 @@ footer{
             top: 0;
             margin-top: -2px;
         }
-        #checkout, #checkoutReserva{
+        #checkout-modal, #checkoutReserva-modal{
             padding-left: 30px;
             color: #5E5E5E;
             font-size: 14px;
@@ -1906,7 +1906,7 @@ footer{
             line-height: normal;
             background: none;
         }
-        #checkin, #checkinReserva{
+        #checkin-modal, #checkinReserva-modal{
             padding-left: 30px;
             color: #5E5E5E;
             font-size: 14px;
@@ -1966,7 +1966,7 @@ footer{
             margin-top: -6px;
             display: inline-flex;
             margin-left: 28;
-            button#btn-plus, button#btn-minus {
+            button#btn-plus-modal, button#btn-minus-modal {
                 color: var(--laranja);
                 border: 1px solid var(--laranja);
                 width: 24px;

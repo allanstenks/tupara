@@ -16,15 +16,16 @@ function initMap() {
 }
 
 var app = {
+  
   init: function() {
     app.initSlickSliders();
     app.initEventListeners();
-    initMap();
     app.setupLightbox();
     app.setupSearch();
+    app.setupUrlUpdateOnInputChange();
     app.checkAccommodationAvailability();
     app.setupReservationForm();
-    app.setupUrlUpdateOnInputChange();
+    initMap();
   },
 
   initSlickSliders: function() {
@@ -125,14 +126,6 @@ var app = {
   },
 
   initEventListeners: function() {
-    // Event listeners for guest buttons
-    document.getElementById('btn-minus').addEventListener('click', function() {
-      app.decreaseGuests();
-    });
-
-    document.getElementById('btn-plus').addEventListener('click', function() {
-      app.increaseGuests();
-    });
 
     // Reserva interactions
     var abrirReservaButton = document.querySelector('.abrir-reserva');
@@ -165,20 +158,6 @@ var app = {
         }
       });
     }
-  },
-
-  decreaseGuests: function() {
-    var input = document.getElementById('num-hospedes');
-    var currentValue = parseInt(input.value);
-    if (currentValue > 1) {
-      input.value = currentValue - 1;
-    }
-  },
-
-  increaseGuests: function() {
-    var input = document.getElementById('num-hospedes');
-    var currentValue = parseInt(input.value);
-    input.value = currentValue + 1;
   },
 
   calculateRoute: function() {
@@ -260,6 +239,7 @@ var app = {
   },
 
   setupSearch: function() {
+    console.log("iniciando")
     // Evento de clique para o botão "Ver Disponibilidade"
     var searchButton = document.querySelector('.btn-search');
     searchButton.addEventListener('click', function() {
@@ -316,27 +296,27 @@ var app = {
         if (checkin) document.getElementById('checkin').value = checkin;
         if (checkout) document.getElementById('checkout').value = checkout;
         if (guests) document.getElementById('num-hospedes').value = guests;
-        if (checkin) document.getElementById('checkinReserva').value = checkin;
-        if (checkout) document.getElementById('checkoutReserva').value = checkout;
-        if (guests) document.getElementById('num-hospedesReserva').value = guests;
+        if (checkin) document.getElementById('checkinReserva-lateral').value = checkin;
+        if (checkout) document.getElementById('checkoutReserva-lateral').value = checkout;
+        if (guests) document.getElementById('num-hospedesReserva-lateral').value = guests;
 
         setTimeout(function() {
           // Preencher os dois conjuntos de campos
           if (checkin) document.getElementById('checkin').value = checkin;
           if (checkout) document.getElementById('checkout').value = checkout;
           if (guests) document.getElementById('num-hospedes').value = guests;
-          if (checkin) document.getElementById('checkinReserva').value = checkin;
-          if (checkout) document.getElementById('checkoutReserva').value = checkout;
-          if (guests) document.getElementById('num-hospedesReserva').value = guests;
+          if (checkin) document.getElementById('checkinReserva-lateral').value = checkin;
+          if (checkout) document.getElementById('checkoutReserva-lateral').value = checkout;
+          if (guests) document.getElementById('num-hospedesReserva-lateral').value = guests;
       
           // Sincronizar campos entre os dois formulários
           var checkin1 = document.getElementById('checkin');
           var checkout1 = document.getElementById('checkout');
           var guests1 = document.getElementById('num-hospedes');
       
-          var checkin2 = document.getElementById('checkinReserva');
-          var checkout2 = document.getElementById('checkoutReserva');
-          var guests2 = document.getElementById('num-hospedesReserva');
+          var checkin2 = document.getElementById('checkinReserva-lateral');
+          var checkout2 = document.getElementById('checkoutReserva-lateral');
+          var guests2 = document.getElementById('num-hospedesReserva-lateral');
       
           // Sincronizar mudanças de checkin
           checkin1.addEventListener('input', function() {
@@ -483,14 +463,15 @@ var app = {
   },
 
   setupUrlUpdateOnInputChange: function() {
+    console.log("Função setupUrlUpdateOnInputChange foi chamada");
     // Selecionar os campos
     var checkinInput = document.getElementById('checkin');
     var checkoutInput = document.getElementById('checkout');
     var guestsInput = document.getElementById('num-hospedes');
 
-    var checkinReservaInput = document.getElementById('checkinReserva');
-    var checkoutReservaInput = document.getElementById('checkoutReserva');
-    var guestsReservaInput = document.getElementById('num-hospedesReserva');
+    var checkinReservaInput = document.getElementById('checkinReserva-lateral');
+    var checkoutReservaInput = document.getElementById('checkoutReserva-lateral');
+    var guestsReservaInput = document.getElementById('num-hospedesReserva-lateral');
 
     // Função para atualizar a URL
     function updateUrlParams() {
@@ -529,6 +510,60 @@ var app = {
     });
   },
 
+  increaseGuestsModal: function() {
+    var input = document.getElementById('num-hospedesReserva-modal');
+    if (input) {
+      var currentValue = parseInt(input.value);
+      input.value = currentValue + 1;
+    } else {
+      console.error("Elemento 'num-hospedesReserva-modal' não encontrado.");
+    }
+  },
+  decreaseGuestsModal: function() {
+    var input = document.getElementById('num-hospedesReserva-modal');
+    if (input) {
+      var currentValue = parseInt(input.value);
+      if (currentValue > 1) {
+        input.value = currentValue - 1;
+      }
+    } else {
+      console.error("Elemento 'num-hospedesReserva-modal' não encontrado.");
+    }
+  },
+
+  increaseGuestsLateral: function() {
+    var input = document.getElementById('num-hospedesReserva-lateral');
+    if (input) {
+      var currentValue = parseInt(input.value);
+      input.value = currentValue + 1;
+    } else {
+      console.error("Elemento 'num-hospedesReserva-lateral' não encontrado.");
+    }
+  },
+  decreaseGuestsLateral: function() {
+    var input = document.getElementById('num-hospedesReserva-lateral');
+    if (input) {
+      var currentValue = parseInt(input.value);
+      if (currentValue > 1) {
+        input.value = currentValue - 1;
+      }
+    } else {
+      console.error("Elemento 'num-hospedesReserva-lateral' não encontrado.");
+    }
+  },
+
+  decreaseGuests: function() {
+    var input = document.getElementById('num-hospedes');
+    var currentValue = parseInt(input.value);
+    if (currentValue > 1) {
+      input.value = currentValue - 1;
+    }
+  },
+  increaseGuests: function() {
+    var input = document.getElementById('num-hospedes');
+    var currentValue = parseInt(input.value);
+    input.value = currentValue + 1;
+  },
 };
 
 // Initialize app when document is ready

@@ -12527,7 +12527,7 @@ footer ul.social li {
   margin-top: -2px;
 }
 
-.detalhes .resumo .busca #checkout, .detalhes .resumo .busca #checkoutReserva {
+.detalhes .resumo .busca #checkout-lateral, .detalhes .resumo .busca #checkoutReserva-lateral {
   padding-left: 30px;
   color: #5E5E5E;
   font-size: 14px;
@@ -12537,7 +12537,7 @@ footer ul.social li {
   background: none;
 }
 
-.detalhes .resumo .busca #checkin, .detalhes .resumo .busca #checkinReserva {
+.detalhes .resumo .busca #checkin-lateral, .detalhes .resumo .busca #checkinReserva-lateral {
   padding-left: 30px;
   color: #5E5E5E;
   font-size: 14px;
@@ -12610,7 +12610,7 @@ footer ul.social li {
   margin-left: 28;
 }
 
-.detalhes .resumo .busca .custom-number-input button#btn-plus, .detalhes .resumo .busca .custom-number-input button#btn-minus {
+.detalhes .resumo .busca .custom-number-input button#btn-plus-lateral, .detalhes .resumo .busca .custom-number-input button#btn-minus-lateral {
   color: var(--laranja);
   border: 1px solid var(--laranja);
   width: 24px;
@@ -12984,7 +12984,7 @@ footer ul.social li {
   margin-top: -2px;
 }
 
-.modal-dialog.modal-lg .busca #checkout, .modal-dialog.modal-lg .busca #checkoutReserva {
+.modal-dialog.modal-lg .busca #checkout-modal, .modal-dialog.modal-lg .busca #checkoutReserva-modal {
   padding-left: 30px;
   color: #5E5E5E;
   font-size: 14px;
@@ -12994,7 +12994,7 @@ footer ul.social li {
   background: none;
 }
 
-.modal-dialog.modal-lg .busca #checkin, .modal-dialog.modal-lg .busca #checkinReserva {
+.modal-dialog.modal-lg .busca #checkin-modal, .modal-dialog.modal-lg .busca #checkinReserva-modal {
   padding-left: 30px;
   color: #5E5E5E;
   font-size: 14px;
@@ -13067,7 +13067,7 @@ footer ul.social li {
   margin-left: 28;
 }
 
-.modal-dialog.modal-lg .busca .custom-number-input button#btn-plus, .modal-dialog.modal-lg .busca .custom-number-input button#btn-minus {
+.modal-dialog.modal-lg .busca .custom-number-input button#btn-plus-modal, .modal-dialog.modal-lg .busca .custom-number-input button#btn-minus-modal {
   color: var(--laranja);
   border: 1px solid var(--laranja);
   width: 24px;
