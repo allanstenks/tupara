@@ -46,7 +46,7 @@
                             <a class="nav-link" href="/sobre.html">O Tupará</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/resultado.html">Hospedagens</a>
+                            <a class="nav-link" href="/resultado.html">Acomodações</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" data-toggle="modal" data-target="#reservaModal">Reservas</a>
@@ -77,7 +77,7 @@
     
                 <!-- Redes sociais à direita -->
                 <ul class="social-icons">
-                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://www.instagram.com/tuparaglamping/"><i class="fab fa-instagram"></i></a></li>
                     <li><a href="#"><i class="fab fa-facebook"></i></a></li>
                     <li><a href="#"><i class="fab fa-youtube"></i></a></li>
                 </ul>
@@ -108,7 +108,7 @@
         <div class="container">
             <div class="row busca justify-content-center">
                 <div class="col-6 col-md-3">
-                    <label for="checkout" class="form-label">CHECK-OUT</label>
+                    <label for="checkin" class="form-label">CHECK-IN</label>
                     <div class="input-group">
                         <input type="date" id="checkin" class="form-control" placeholder="Insira a data">
                     </div>
@@ -128,7 +128,7 @@
                     </div>
                 </div>
                 <div class="col-12 col-md-3 justify-content-end align-items-end">
-                    <button class="btn-search">Ver Disponibilidade</button>
+                    <button class="btn-search" data-form-id="main">Ver Disponibilidade</button>
                 </div>
             </div>
         </div>
@@ -136,39 +136,40 @@
 
     <div class="nossas-acomodacoes">
         <div class="container">
-            <div class="row  justify-content-center">
+            <div class="row justify-content-center">
                 <div class="col-md-12">
                     <i><img src="/assets/img/icon-acomodacoes.png"></i>
                     <h3>TUPARÁ GLAMPING</h3>
                     <h2>Nossas acomodações</h2>
                 </div>
                 <div class="col-md-4">
-                    <a class="item-acomodacoes">
-                        <div class="img" style="background: url(https://idzagencia.com.br/clientes/tupara/assets/img/img-camping.png) no-repeat center / cover;"></div>
+                    <a href="camping.html" class="item-acomodacoes">
+                        <div class="img" style="background: url(/assets/img/img-camping.png) no-repeat center / cover;"></div>
                         <div class="desc">
                             <h4><i class="icon"><span class="iconify" data-icon="ph:tent-bold" data-inline="false"></span></i> <b>Camping</b></h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis lectus sed nisl ultricies facilisis.</p>
+                            <p>Para quem busca uma experiência mais próxima da natureza, nosso espaço de camping oferece a liberdade de montar sua própria barraca em um ambiente seguro e tranquilo.</p>
                             <span class="link"><i class="fa fa-arrow-right"></i><b>Saiba mais</b></span>
                         </div>
                     </a>
-                    </div>
-                    <div class="col-md-4">
-                    <a class="item-acomodacoes em-breve">
-                        <div class="img" style="background: url(https://idzagencia.com.br/clientes/tupara/assets/img/img-chale.png) no-repeat center / cover;"></div>
+                </div>
+                
+                <div class="col-md-4">
+                    <a href="baia.html" class="item-acomodacoes">
+                        <div class="img" style="background: url(/assets/img/img-baia.png) no-repeat center / cover;"></div>
                         <div class="desc">
-                            <h4><span class="material-symbols-outlined">camping</span> <b>Chalé</b></h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis lectus sed nisl ultricies facilisis.</p>
-                            <div class="selo"></div>
+                            <h4><span class="material-symbols-outlined">camping</span> <b>Baiá</b></h4>
+                            <p>Nossos baiás são mini chalés aconchegantes e práticos, ideais para quem deseja uma experiência mais confortável e intimista em meio à natureza.</p>
                             <span class="link"><i class="fa fa-arrow-right"></i><b>Saiba mais</b></span>
                         </div>
                     </a>
                 </div>
                 <div class="col-md-4">
-                    <a class="item-acomodacoes">
-                        <div class="img" style="background: url(https://idzagencia.com.br/clientes/tupara/assets/img/img-baia.png) no-repeat center / cover;"></div>
+                    <a class="item-acomodacoes em-breve">
+                        <div class="img" style="background: url(/assets/img/img-chale.png) no-repeat center / cover;"></div>
                         <div class="desc">
-                            <h4><span class="material-symbols-outlined">camping</span> <b>Baiá</b></h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis lectus sed nisl ultricies facilisis.</p>
+                            <h4><span class="material-symbols-outlined">camping</span> <b>Chalé</b></h4>
+                            <p>Em breve, nossos charmosos chalés estarão disponíveis para quem busca mais conforto, sem perder o contato direto com a natureza.</p>
+                            <div class="selo"></div>
                             <span class="link"><i class="fa fa-arrow-right"></i><b>Saiba mais</b></span>
                         </div>
                     </a>
@@ -179,6 +180,7 @@
             </div>
         </div>
     </div>
+    
 
     <div class="video" uk-lightbox="animation: fade">
         <div class="container">
@@ -237,7 +239,7 @@
                         </ul>
                     </div>
 
-                    <a>Faça sua Reserva</a>
+                    <a href="/resultado.html">Faça sua Reserva</a>
                 </div>
             </div>
         </div>
@@ -248,29 +250,29 @@
             <div class="row">
                 <div class="col-5 col-md-4">
                     <a href="/assets/img/fotos/imgCamping5.png" data-uk-lightbox="animation: slide">
-                        <div class="img full" style="background: url(https://idzagencia.com.br/clientes/tupara/assets/img/fotos/imgCamping5.png) no-repeat center / cover;"></div>
+                        <div class="img full" style="background: url(/assets/img/fotos/imgCamping5.png) no-repeat center / cover;"></div>
                     </a>
                 </div>
                 <div class="col-7 col-md-8">
                     <div class="row">
                         <div class="col-12 col-md-12">
                             <a href="/assets/img/fotos/imgCamping4.png" data-uk-lightbox="animation: slide">
-                                <div class="img" style="background: url(https://idzagencia.com.br/clientes/tupara/assets/img/fotos/imgCamping4.png) no-repeat center / cover;"></div>
+                                <div class="img" style="background: url(/assets/img/fotos/imgCamping4.png) no-repeat center / cover;"></div>
                             </a>
                         </div>
                         <div class="col-4 col-md-4">
                             <a href="/assets/img/fotos/imgCamping3.png" data-uk-lightbox="animation: slide">
-                                <div class="img" style="background: url(https://idzagencia.com.br/clientes/tupara/assets/img/fotos/imgCamping3.png) no-repeat center / cover;"></div>
+                                <div class="img" style="background: url(/assets/img/fotos/imgCamping3.png) no-repeat center / cover;"></div>
                             </a>
                         </div>
                         <div class="col-4 col-md-4">
                             <a href="/assets/img/fotos/imgCamping2.png" data-uk-lightbox="animation: slide">
-                                <div class="img" style="background: url(https://idzagencia.com.br/clientes/tupara/assets/img/fotos/imgCamping2.png) no-repeat center / cover;"></div>
+                                <div class="img" style="background: url(/assets/img/fotos/imgCamping2.png) no-repeat center / cover;"></div>
                             </a>
                         </div>
                         <div class="col-4 col-md-4">
                             <a href="/assets/img/fotos/imgCamping1.png" data-uk-lightbox="animation: slide">
-                                <div class="img" style="background: url(https://idzagencia.com.br/clientes/tupara/assets/img/fotos/imgCamping1.png) no-repeat center / cover;"></div>
+                                <div class="img" style="background: url(/assets/img/fotos/imgCamping1.png) no-repeat center / cover;"></div>
                             </a>
                         </div>
                     </div>
@@ -324,7 +326,7 @@
 
     <div class="depoimentos">
         <div class="container">
-            <div class="row  justify-content-center">
+            <div class="row justify-content-center">
                 <div class="col-md-12">
                     <i><img src="/assets/img/icon-depoimentos.png"></i>
                     <h3>Depoimentos</h3>
@@ -343,11 +345,10 @@
                                 <span class="iconify" data-icon="ic:round-star" data-inline="false"></span>
                                 <span class="iconify" data-icon="ic:round-star" data-inline="false"></span>
                             </i>
-                            <span></span>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis lectus sed nisl ultricies facilisis. Pellentesque varius odio in consectetur consectetur.</p>
+                            <p>“Foi uma experiência incrível! O Tupará é perfeito para quem quer se desconectar e relaxar. A infraestrutura é excelente e o contato com a natureza faz toda a diferença.”</p>
                             <div class="avatar">
                                 <span><img src="/assets/img/avatar.png"/></span>
-                                <h6>Lorem ipsum</h6>
+                                <h6>Mariana Silva</h6>
                             </div>
                         </div>
                     </div>
@@ -361,11 +362,10 @@
                                 <span class="iconify" data-icon="ic:round-star" data-inline="false"></span>
                                 <span class="iconify" data-icon="ic:round-star" data-inline="false"></span>
                             </i>
-                            <span></span>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis lectus sed nisl ultricies facilisis. Pellentesque varius odio in consectetur consectetur.</p>
+                            <p>“Estadia maravilhosa! As baiás são super confortáveis e o ambiente é muito acolhedor. Recomendo demais para quem quer descansar e aproveitar a natureza.”</p>
                             <div class="avatar">
                                 <span><img src="/assets/img/avatar.png"/></span>
-                                <h6>Lorem ipsum</h6>
+                                <h6>João Pereira</h6>
                             </div>
                         </div>
                     </div>
@@ -379,29 +379,10 @@
                                 <span class="iconify" data-icon="ic:round-star" data-inline="false"></span>
                                 <span class="iconify" data-icon="ic:round-star" data-inline="false"></span>
                             </i>
-                            <span></span>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis lectus sed nisl ultricies facilisis. Pellentesque varius odio in consectetur consectetur.</p>
+                            <p>“Adoramos o final de semana no Tupará! Um lugar especial para fugir da cidade, com ótima estrutura e uma vibe muito tranquila. Voltaremos com certeza.”</p>
                             <div class="avatar">
                                 <span><img src="/assets/img/avatar.png"/></span>
-                                <h6>Lorem ipsum</h6>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="item-depoimento">
-                            <div class="aspas"><img src="/assets/img/aspas.png"/></div>
-                            <i>
-                                <span class="iconify" data-icon="ic:round-star" data-inline="false"></span>
-                                <span class="iconify" data-icon="ic:round-star" data-inline="false"></span>
-                                <span class="iconify" data-icon="ic:round-star" data-inline="false"></span>
-                                <span class="iconify" data-icon="ic:round-star" data-inline="false"></span>
-                                <span class="iconify" data-icon="ic:round-star" data-inline="false"></span>
-                            </i>
-                            <span></span>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis lectus sed nisl ultricies facilisis. Pellentesque varius odio in consectetur consectetur.</p>
-                            <div class="avatar">
-                                <span><img src="/assets/img/avatar.png"/></span>
-                                <h6>Lorem ipsum</h6>
+                                <h6>Ana Souza</h6>
                             </div>
                         </div>
                     </div>
@@ -415,7 +396,7 @@
             <div class="row">
                 <div class="col-md-7">
                     <h2>Viajar também é <strong>uma jornada</strong> para dentro de si mesmo.</h2>
-                    <a>Faça sua Reserva</a>
+                    <a href="/resultado.html">Faça sua Reserva</a>
                 </div>
             </div>
         </div>
@@ -430,25 +411,25 @@
                 <div class="col-md-6">
                     <ul class="sitemap">
                         <h5>Home</h5>
-                        <li><a>Hospedagens</a></li>
-                        <li><a>Estrutura</a></li>
+                        <li><a href="/resultado.html"></a>Acomodações</li>
+                        <li><a href="/sobre.html">Estrutura</a></li>
                         <li><a>Depoimentos</a></li>
                     </ul>
                     <ul class="sitemap">
-                        <h5>Hospedagens</h5>
-                        <li><a>Camping</a></li>
+                        <h5>Acomodações</h5>
+                        <li><a href="camping.html">Camping</a></li>
                         <li><a>Chalés</a></li>
-                        <li><a>Baías</a></li>
+                        <li><a href="baia.html">Baías</a></li>
                     </ul>
                 </div>
                 <div class="col-md-3">
                     <ul>
                         <h5>Contato</h5>
-                        <li><a><i><span class="iconify" data-icon="ic:round-phone" data-inline="false"></span></i> (11) 0000-0000</a></li>
-                        <li><a><i><span class="iconify" data-icon="material-symbols:mail" data-inline="false"></span></i> ola@tupara.com.br</a></li>
+                        <li><a><i><span class="iconify" data-icon="ic:round-phone" data-inline="false"></span></i> (15) 99821-4861</a></li>
+                        <li><a><i><span class="iconify" data-icon="material-symbols:mail" data-inline="false"></span></i> contato@tupara.com.br </a></li>
                     </ul>
                     <ul class="social">
-                        <li><a><i><span class="iconify" data-icon="ri:instagram-fill" data-inline="false"></span></i></a></li>
+                        <li><a href="https://www.instagram.com/tuparaglamping/"><i><span class="iconify" data-icon="ri:instagram-fill" data-inline="false"></span></i></a></li>
                         <li><a><i><span class="iconify" data-icon="ic:baseline-facebook" data-inline="false"></span></i></a></li>
                         <li><a><i><span class="iconify" data-icon="mingcute:youtube-fill" data-inline="false"></span></i></a></li>
                     </ul>

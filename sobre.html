@@ -47,7 +47,7 @@
                             <a class="nav-link" href="/sobre.html">O Tupará</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/resultado.html">Hospedagens</a>
+                            <a class="nav-link" href="/resultado.html">Acomodações</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" data-toggle="modal" data-target="#reservaModal">Reservas</a>
@@ -92,20 +92,20 @@
                         <div class="col-md-2 d-none d-md-block">
                             <label for="hospedes" class="form-label">HÓSPEDES</label>
                             <div class="custom-number-input">
-                                <button id="btn-minus" onclick="decreaseGuests()">-</button>
+                                <button id="btn-minus" onclick="app.decreaseGuests()">-</button>
                                 <input type="number" id="num-hospedes" value="1" min="1" readonly>
-                                <button id="btn-plus" onclick="increaseGuests()">+</button>
+                                <button id="btn-plus" onclick="app.increaseGuests()">+</button>
                             </div>
                         </div>
                         <div class="col-md-3 justify-content-end align-items-end">
-                            <button class="btn-search"><i><span class="iconify" data-icon="material-symbols:search" data-inline="false"></span></i></button>
+                            <button class="btn-search" data-form-id="main"><i><span class="iconify" data-icon="material-symbols:search" data-inline="false"></span></i></button>
                         </div>
                     </div>
                 </div>
 
                 <!-- Redes sociais à direita -->
                 <ul class="social-icons">
-                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://www.instagram.com/tuparaglamping/"><i class="fab fa-instagram"></i></a></li>
                     <li><a href="#"><i class="fab fa-facebook"></i></a></li>
                     <li><a href="#"><i class="fab fa-youtube"></i></a></li>
                 </ul>
@@ -190,25 +190,25 @@
                 <div class="col-md-6">
                     <ul class="sitemap">
                         <h5>Home</h5>
-                        <li><a>Hospedagens</a></li>
-                        <li><a>Estrutura</a></li>
+                        <li><a href="/resultado.html"></a>Acomodações</li>
+                        <li><a href="/sobre.html">Estrutura</a></li>
                         <li><a>Depoimentos</a></li>
                     </ul>
                     <ul class="sitemap">
-                        <h5>Hospedagens</h5>
-                        <li><a>Camping</a></li>
+                        <h5>Acomodações</h5>
+                        <li><a href="camping.html">Camping</a></li>
                         <li><a>Chalés</a></li>
-                        <li><a>Baías</a></li>
+                        <li><a href="baia.html">Baías</a></li>
                     </ul>
                 </div>
                 <div class="col-md-3">
                     <ul>
                         <h5>Contato</h5>
-                        <li><a><i><span class="iconify" data-icon="ic:round-phone" data-inline="false"></span></i> (11) 0000-0000</a></li>
-                        <li><a><i><span class="iconify" data-icon="material-symbols:mail" data-inline="false"></span></i> ola@tupara.com.br</a></li>
+                        <li><a><i><span class="iconify" data-icon="ic:round-phone" data-inline="false"></span></i> (15) 99821-4861</a></li>
+                        <li><a><i><span class="iconify" data-icon="material-symbols:mail" data-inline="false"></span></i> contato@tupara.com.br </a></li>
                     </ul>
                     <ul class="social">
-                        <li><a><i><span class="iconify" data-icon="ri:instagram-fill" data-inline="false"></span></i></a></li>
+                        <li><a href="https://www.instagram.com/tuparaglamping/"><i><span class="iconify" data-icon="ri:instagram-fill" data-inline="false"></span></i></a></li>
                         <li><a><i><span class="iconify" data-icon="ic:baseline-facebook" data-inline="false"></span></i></a></li>
                         <li><a><i><span class="iconify" data-icon="mingcute:youtube-fill" data-inline="false"></span></i></a></li>
                     </ul>

@@ -11317,7 +11317,7 @@ header.interno .busca .custom-number-input input {
 }
 
 .nossas-acomodacoes .item-acomodacoes {
-  height: 480px;
+  height: 620px;
   width: 100%;
   border-radius: 8px;
   overflow: hidden;
@@ -11355,6 +11355,7 @@ header.interno .busca .custom-number-input input {
   letter-spacing: 1.159px;
   margin: 0;
   padding: 0;
+  display: inline-block;
 }
 
 .nossas-acomodacoes .item-acomodacoes .desc h4 i {
@@ -11420,7 +11421,7 @@ header.interno .busca .custom-number-input input {
 
 .nossas-acomodacoes .item-acomodacoes:hover:not(.em-breve) .desc p {
   display: block;
-  height: 40px;
+  height: 50px;
 }
 
 .nossas-acomodacoes .item-acomodacoes:hover:not(.em-breve) .desc span {
@@ -12024,8 +12025,10 @@ header.interno .busca .custom-number-input input {
   letter-spacing: 0.68px;
   margin-bottom: 30px;
   margin-top: 65px;
+  line-height: 44px;
   position: relative;
   z-index: 2;
+  width: 70%;
 }
 
 .reservas h2 strong {
@@ -12070,6 +12073,11 @@ footer ul li {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+footer ul li a {
+  color: #5E5E5E;
+  text-decoration: none;
 }
 
 footer ul li h4 {
@@ -12383,6 +12391,7 @@ footer ul.social li {
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
+  display: inline-block;
 }
 
 .detalhes h2 {
@@ -12451,7 +12460,7 @@ footer ul.social li {
 
 .detalhes .resumo .header h4 span {
   color: #605C56;
-  font-size: 16px;
+  font-size: 13px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -12499,6 +12508,10 @@ footer ul.social li {
 
 .detalhes .resumo .remunido ul li:nth-child(2) {
   border-bottom: 1px solid #DDD;
+}
+
+.detalhes .resumo .voltar {
+  display: none;
 }
 
 .detalhes .resumo .busca .busca > div {
@@ -12647,6 +12660,10 @@ footer ul.social li {
 
 .detalhes .resumo .abrir-reserva {
   display: none;
+}
+
+.detalhes .resumo .btn-reserva:disabled {
+  background: #605C56;
 }
 
 .sobre {
@@ -13449,6 +13466,7 @@ footer ul.social li {
     bottom: 10px;
     z-index: 999;
     width: 90%;
+    min-width: inherit;
   }
   .busca-top .btn-search {
     margin-right: 0 !important;
@@ -13526,6 +13544,13 @@ footer ul.social li {
   .resultado {
     padding: 60px 20px;
   }
+  .resultado .item-acomodacoes {
+    height: 600px;
+  }
+  .resultado .item-acomodacoes .desc p {
+    display: block;
+    height: 60px;
+  }
   .galeria img {
     display: none;
   }
@@ -13570,6 +13595,9 @@ footer ul.social li {
     float: right;
     margin-top: 20px;
     display: none;
+  }
+  .detalhes .resumo .voltar {
+    display: block;
   }
   .detalhes .resumo.fechado .btn-reserva, .detalhes .resumo.fechado .voltar {
     display: none;

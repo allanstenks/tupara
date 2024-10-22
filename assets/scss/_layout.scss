@@ -380,7 +380,7 @@ header{
         margin-top: 0;
     }
     .item-acomodacoes{
-        height: 480px;
+        height: 620px;
         width: 100%;
         border-radius: 8px;
         overflow: hidden;
@@ -412,6 +412,7 @@ header{
                 letter-spacing: 1.159px;
                 margin: 0;
                 padding: 0;
+                display: inline-block;
                 i{
                     display: none;
                 }
@@ -471,7 +472,7 @@ header{
 
                 p{
                     display: block;
-                    height: 40px;
+                    height: 50px;
                 }
                 span{
                     color: #EFC782;
@@ -1001,7 +1002,7 @@ header{
         bottom: 0;
         right: 0;
     }
-    h2{
+    h2 {
         font-family: 'BrandRegular';
         color: #FFF;
         font-size: 26px;
@@ -1010,8 +1011,10 @@ header{
         letter-spacing: 0.68px;
         margin-bottom: 30px;
         margin-top: 65px;
+        line-height: 44px;
         position: relative;
         z-index: 2;
+        width: 70%;
         strong{
             color: #E0BF81;
         }
@@ -1051,6 +1054,10 @@ footer{
             list-style: none;
             margin: 0;
             padding: 0;
+            a{
+                color: #5E5E5E;
+                text-decoration: none;
+            }
             h4{
                 color: #605C56;
                 font-size: 16px;
@@ -1332,6 +1339,7 @@ footer{
         font-style: normal;
         font-weight: 400;
         line-height: 24px;
+        display: inline-block;
     }
     h2{
         color: #605C56;
@@ -1388,7 +1396,7 @@ footer{
                 margin-top: -10px;
                 span{
                     color: #605C56;
-                    font-size: 16px;
+                    font-size: 13px;
                     font-style: normal;
                     font-weight: 500;
                     line-height: normal;
@@ -1434,6 +1442,9 @@ footer{
                     }
                 }
             }
+        }
+        .voltar{
+            display: none;
         }
         .busca{
             .busca {
@@ -1566,6 +1577,9 @@ footer{
         }
         .abrir-reserva{
             display: none;
+        }
+        .btn-reserva:disabled{
+            background: #605C56;
         }
     }
 }
@@ -2376,6 +2390,7 @@ footer{
         bottom: 10px;
         z-index: 999;
         width: 90%;
+        min-width: inherit;
         .btn-search {
             margin-right: 0 !important;
         }
@@ -2436,6 +2451,15 @@ footer{
     }
     .resultado{
         padding: 60px 20px;
+        .item-acomodacoes {
+            height: 600px;
+            .desc {
+                p{
+                    display: block;
+                    height: 60px;
+                }
+            }
+        }
     }
     .galeria{
         img{
@@ -2485,6 +2509,9 @@ footer{
                 float: right;
                 margin-top: 20px;
                 display: none;
+            }
+            .voltar {
+                display: block;
             }
             &.fechado{
                 .btn-reserva, .voltar {
